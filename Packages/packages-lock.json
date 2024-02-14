@@ -1,7 +1,14 @@
 {
   "dependencies": {
+    "com.rorygames.vhacd": {
+      "version": "https://github.com/rorygames/VHACD.git?path=/com.rorygames.vhacd",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f4f20c91e7257ae98ea58b7c2fe59fcb98bac85d"
+    },
     "com.unity.collab-proxy": {
-      "version": "2.0.5",
+      "version": "2.0.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -16,7 +23,7 @@
     },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -46,7 +53,7 @@
     },
     "com.unity.ide.visualstudio": {
       "version": "2.0.18",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
@@ -55,7 +62,7 @@
     },
     "com.unity.ide.vscode": {
       "version": "1.2.5",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -67,6 +74,24 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.postprocessing": {
+      "version": "3.2.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.recorder": {
+      "version": "3.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.settings-manager": {
       "version": "2.0.1",
       "depth": 2,
@@ -76,7 +101,7 @@
     },
     "com.unity.test-framework": {
       "version": "1.1.33",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ext.nunit": "1.0.6",
@@ -105,7 +130,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.7.5",
+      "version": "1.6.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -134,6 +159,12 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "info.flandre.coacd": {
+      "version": "file:info.flandre.coacd",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
