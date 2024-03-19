@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "com.dgreenheck.openfracture": {
+      "version": "https://github.com/dgreenheck/OpenFracture.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.30",
+        "com.unity.testtools.codecoverage": "1.0.1"
+      },
+      "hash": "6d0ddff64173193f024638c2de2dbeb8a2525965"
+    },
     "com.rorygames.vhacd": {
       "version": "https://github.com/rorygames/VHACD.git?path=/com.rorygames.vhacd",
       "depth": 0,

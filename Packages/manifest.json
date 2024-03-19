@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.dgreenheck.openfracture": "https://github.com/dgreenheck/OpenFracture.git",
     "com.rorygames.vhacd": "https://github.com/rorygames/VHACD.git?path=/com.rorygames.vhacd",
     "com.unity.collab-proxy": "2.0.4",
     "com.unity.feature.development": "1.0.1",
