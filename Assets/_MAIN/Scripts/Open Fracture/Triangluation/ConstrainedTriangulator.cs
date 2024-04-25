@@ -418,8 +418,10 @@ namespace UnityFracture
                 if (TriangleContainsConstraint(tSearch, constraint))
                     return false;
                 else if (EdgeConstraintIntersectsTriangle(tSearch, constraint, out intersectingEdgeIndex))
+                { 
                     intersectionFound = true;
-                    break;
+                    break; 
+                }
 
                 tE12 = triangulation[tSearch, E12];
                 tE23 = triangulation[tSearch, E23];

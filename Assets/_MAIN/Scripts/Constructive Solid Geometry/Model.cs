@@ -37,7 +37,7 @@ namespace UnityFracture
         }
 
         public Model(GameObject gameObject) :
-            this(gameObject.GetComponent<MeshFilter>()?.sharedMesh,
+            this(gameObject.GetComponent<MeshFilter>()?.mesh,
                 gameObject.GetComponent<MeshRenderer>()?.sharedMaterials,
                 gameObject.GetComponent<Transform>())
         {
@@ -105,7 +105,7 @@ namespace UnityFracture
             {
                 var indices = m_Indices[s];
 
-                for (int i = 0, ic = indices.Count; i < indices.Count; i += 3)
+                for (int i = 0; i < indices.Count; i += 3)
                 {
                     List<Vertex> triangle = new List<Vertex>()
                     {

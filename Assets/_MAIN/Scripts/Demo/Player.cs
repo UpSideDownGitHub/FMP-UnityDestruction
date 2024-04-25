@@ -12,19 +12,23 @@ namespace UnityFracture.Demo
         public Rigidbody rb;
         public float movementForce;
         public float maxVelocity;
+        
         [Header("Jumping")]
         public float jumpForce;
         public float groundDistance;
         public string groundTag;
         public bool grounded = true;
+        
         [Header("Camera")]
         public GameObject cam;
+
         [Header("Shooting")]
         public float fireRate;
-        public float fireForce;
+        public float fireDistance;
         public Transform firePoint;
-        public GameObject bullet;
+        public GameObject CollisionObject;
         private float _timeOfNextFire;
+        public GameObject destructionObject;
 
 
         public void Start()
@@ -65,9 +69,14 @@ namespace UnityFracture.Demo
             // shooting
             if (Time.time > _timeOfNextFire && Input.GetMouseButtonDown(0))
             {
-                _timeOfNextFire = Time.time + fireRate;
-                Rigidbody bulletRB = Instantiate(bullet, firePoint.position, firePoint.rotation).GetComponent<Rigidbody>();
-                bulletRB.AddForce(bulletRB.transform.forward * fireForce);
+                // shoot ray in the distance of the house
+                RaycastHit hit;
+                Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, fireDistance);
+                if (hit.collider != null)
+                {
+                    Instantiate(destructionObject, hit.point, Quaternion.identity, hit.collider.transform);
+                    
+                }
             }
         }
     }

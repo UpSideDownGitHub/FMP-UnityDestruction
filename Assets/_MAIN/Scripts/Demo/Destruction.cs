@@ -11,48 +11,62 @@ namespace UnityFracture.Demo
         public int fragmentCount;
         public Material insideMat;
 
-        [Header("CSG options")]
-        public GameObject parent;
+        //[Header("CSG options")]
+        //public GameObject mainMesh;
+        //public GameObject collisionHolder;
 
         [Header("Trigger Options")]
         public string triggerTag;
-        public float minCollisionForce;
+
 
         private GameObject fragmentRoot;
+        private Vector3 ogPos;
+        private Quaternion ogRot;
+        private Vector3 ogSca;
 
         public void OnCollisionEnter(Collision collision)
         {
             if (collision.contactCount > 0)
             {
-                float collisionForce = collision.impulse.magnitude / Time.fixedDeltaTime;
-                if (collision.collider.CompareTag(triggerTag) &&
-                    collisionForce > minCollisionForce)
+                if (collision.collider.CompareTag(triggerTag))
                 {
-                    // set to default position
-                    Vector3 prevPos = parent.transform.position;
-                    Quaternion prevRot = parent.transform.rotation;
-                    Vector3 prevSca = parent.transform.localScale;
-                    parent.transform.localScale = Vector3.one;
-                    parent.transform.position = Vector3.zero;
-                    parent.transform.rotation = Quaternion.identity;
-
-                    // remove this part of the object from the visual mesh
-                    Model result = CSG.Subtract(parent, gameObject);
-                    parent.GetComponent<MeshFilter>().sharedMesh = result.mesh;
-                    parent.GetComponent<MeshRenderer>().sharedMaterials = result.materials.ToArray();
-
-                    // fracture the part that fell off
-                    FractureThis(collision.gameObject.GetComponent<Rigidbody>());
-
-                    // reset the position of the parent
-                    parent.transform.position = prevPos;
-                    parent.transform.localScale = prevSca;
-                    parent.transform.rotation = prevRot;
-
-                    // Kill this object
-                    Destroy(gameObject);
+                    Destroy(GetComponent<Rigidbody>(), collision.gameObject);
                 }
             }
+        }
+
+        public void Start()
+        {
+            // set to default position
+
+        }
+
+        public void Destroy(Rigidbody collision, GameObject colObject)
+        {
+            // save size and set to 0
+            var ogPos = colObject.transform.position;
+            var ogRot = colObject.transform.rotation;
+            var ogSca = colObject.transform.localScale;
+            colObject.transform.localScale = Vector3.one;
+            colObject.transform.position = Vector3.zero;
+            colObject.transform.rotation = Quaternion.identity;
+
+            // remove this part of the object from the visual mesh
+            Model result = CSG.Subtract(colObject, gameObject);
+            Instantiate((Mesh)result, Vector3.zero, Quaternion.identity);
+            colObject.GetComponent<MeshFilter>().mesh = result.mesh;
+            colObject.GetComponent<MeshRenderer>().materials = result.materials.ToArray();
+
+            // fracture the part that fell off
+            //FractureThis(collision.gameObject.GetComponent<Rigidbody>());
+
+            // set to correct size
+            colObject.transform.position = ogPos;
+            colObject.transform.localScale = ogSca;
+            colObject.transform.rotation = ogRot;
+
+            // Kill this object
+            Destroy(gameObject);
         }
 
         public void FractureThis(Rigidbody collisionRB)

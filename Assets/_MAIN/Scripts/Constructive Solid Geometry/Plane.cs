@@ -122,6 +122,7 @@ namespace UnityFracture
                         }
                     }
                     break;
+                    // end
             }
         }
     }

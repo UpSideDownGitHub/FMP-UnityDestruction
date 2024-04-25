@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityFracture;
 
-namespace UnityFracture.Demo
+namespace Parabox.CSG
 {
     /// <summary>
     /// Simple demo of CSG operations.
