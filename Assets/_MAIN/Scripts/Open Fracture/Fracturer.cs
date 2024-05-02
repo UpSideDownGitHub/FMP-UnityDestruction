@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Unity.VisualScripting.YamlDotNet.Core.Tokens;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.GameCenter;
@@ -19,7 +20,7 @@ namespace UnityFracture
                                     Material insideMat)
         {
             // CHANGED THE FOLLOWING LINE TO MESH insted of SHARED MESH
-            MeshData sourceMesh = new MeshData(sourceObject.GetComponent<MeshFilter>().mesh);
+            MeshData sourceMesh = new MeshData(sourceObject.GetComponent<MeshFilter>().sharedMesh);
             var fragments = new Queue<MeshData>();
             fragments.Enqueue(sourceMesh);
 
@@ -102,6 +103,32 @@ namespace UnityFracture
 
                 i++;
             }
+        }
+
+        public static GameObject CreateTemplate(GameObject sender, Material insideMat)
+        {
+            GameObject obj = new("Fragment") { tag = sender.tag };
+            obj.AddComponent<MeshFilter>();
+
+            var meshRenderer = obj.AddComponent<MeshRenderer>();
+            meshRenderer.sharedMaterials = new Material[2] { sender.GetComponent<MeshRenderer>().sharedMaterial,
+                insideMat};
+
+            var thisCollider = sender.GetComponent<Collider>();
+            var fragmentCollider = obj.AddComponent<MeshCollider>();
+            fragmentCollider.convex = true;
+            fragmentCollider.sharedMaterial = thisCollider.sharedMaterial;
+            fragmentCollider.isTrigger = thisCollider.isTrigger;
+
+            var thisRigidBody = sender.GetComponent<Rigidbody>();
+            var fragmentRigidBody = obj.AddComponent<Rigidbody>();
+            fragmentRigidBody.velocity = thisRigidBody.velocity;
+            fragmentRigidBody.angularVelocity = thisRigidBody.angularVelocity;
+            fragmentRigidBody.drag = thisRigidBody.drag;
+            fragmentRigidBody.angularDrag = thisRigidBody.angularDrag;
+            fragmentRigidBody.useGravity = thisRigidBody.useGravity;
+
+            return obj;
         }
     }
 }

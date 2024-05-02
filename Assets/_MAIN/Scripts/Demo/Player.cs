@@ -74,8 +74,7 @@ namespace UnityFracture.Demo
                 Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, fireDistance);
                 if (hit.collider != null)
                 {
-                    Instantiate(destructionObject, hit.point, Quaternion.identity, hit.collider.transform);
-                    
+                    Instantiate(destructionObject, hit.point, Quaternion.identity);
                 }
             }
         }

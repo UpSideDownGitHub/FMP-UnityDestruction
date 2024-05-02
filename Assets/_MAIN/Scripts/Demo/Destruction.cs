@@ -56,6 +56,7 @@ namespace UnityFracture.Demo
             Instantiate((Mesh)result, Vector3.zero, Quaternion.identity);
             colObject.GetComponent<MeshFilter>().mesh = result.mesh;
             colObject.GetComponent<MeshRenderer>().materials = result.materials.ToArray();
+            colObject.GetComponent<MeshFilter>().mesh.Optimize();
 
             // fracture the part that fell off
             //FractureThis(collision.gameObject.GetComponent<Rigidbody>());
