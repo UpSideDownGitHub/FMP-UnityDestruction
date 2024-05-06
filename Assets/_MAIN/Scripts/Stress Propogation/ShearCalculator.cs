@@ -7,24 +7,26 @@ using UnityEngine;
 
 namespace UnityFracture
 {
-    public class ShearCalculator : MonoBehaviour
+    public class ShearCalculator
     {
         public StressTensor stressTensor;
 
-        public void Start()
+        public ShearCalculator()
         {
             // calculate princible stress
             StressMaterial material = new StressMaterial(1f, 1f, 1f);
             stressTensor = new StressTensor(material);
-
             stressTensor.SetStress(0, 0, 1000f); // σ_xx
             stressTensor.SetStress(1, 1, -500f); // σ_yy
             stressTensor.SetStress(2, 2, 300f);  // σ_zz
             stressTensor.SetStress(0, 1, 200f);  // τ_xy (shear stress)
             stressTensor.SetStress(1, 2, 150f);  // τ_yz (shear stress)
             stressTensor.SetStress(0, 2, 50f);   // τ_xz (shear stress)
+        }
 
-            CalculateShear();
+        public void UpdateForces(Vector3 forces)
+        {
+            stressTensor.UpdateStress(forces);
         }
 
         public void CalculateShear()
