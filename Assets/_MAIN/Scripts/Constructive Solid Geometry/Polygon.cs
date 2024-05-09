@@ -2,7 +2,7 @@
 using UnityEngine;
 namespace UnityFracture
 {
-    sealed class Polygon
+    public class Polygon
     {
         public List<Vertex> vertices;
         public Plane plane;

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityFracture
 {
-    sealed class Plane
+    public class Plane
     {
         public Vector3 normal;
         public float w;
@@ -25,7 +25,7 @@ namespace UnityFracture
 
         public Plane(Vector3 a, Vector3 b, Vector3 c)
         {
-            normal = Vector3.Cross(b - a, c - a);//.normalized;
+            normal = Vector3.Cross(b - a, c - a);
             w = Vector3.Dot(normal, a);
         }
 
