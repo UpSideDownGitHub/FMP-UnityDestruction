@@ -29,7 +29,7 @@ namespace UnityFracture
             stressTensor.UpdateStress(forces);
         }
 
-        public void CalculateShear()
+        public bool CalculateShear()
         {
             // Compute principal stresses
             float I1 = stressTensor.GetStress(0, 0) + stressTensor.GetStress(1, 1) + stressTensor.GetStress(2, 2);
@@ -42,14 +42,9 @@ namespace UnityFracture
 
             float sigma_max = I1 + Mathf.Sqrt(I1 * I1 - 3f * I2);
             float sigma_min = I1 - Mathf.Sqrt(I1 * I1 - 3f * I2);
-
             float shearThreshold = 0.1f * sigma_max; // 10% of max stress
-            bool isShear = Mathf.Abs(sigma_max - sigma_min) > shearThreshold;
-
-            if (isShear)
-            {
-                // SHEAR THE OBJECT
-            }
+            Debug.Log($"Shear Threshold: {shearThreshold}\n Shear: {Mathf.Abs(sigma_max - sigma_min)}");
+            return Mathf.Abs(sigma_max - sigma_min) > shearThreshold; // true if should shear
         }
     }
 }

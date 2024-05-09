@@ -12,6 +12,7 @@ namespace UnityFracture.Demo
         public Material insideMat;
         public bool fractureCollision;
         public bool destroyPost;
+        public bool ignoreCollision;
 
         [Header("Trigger Options")]
         public string triggerTag;
@@ -21,6 +22,8 @@ namespace UnityFracture.Demo
 
         public void OnCollisionEnter(Collision collision)
         {
+            if (ignoreCollision)
+                return;
             if (collision.contactCount > 0)
             {
                 float collisionForce = collision.impulse.magnitude / Time.fixedDeltaTime;
@@ -62,17 +65,35 @@ namespace UnityFracture.Demo
                     fragmentCount,
                     insideMat);
 
-                fragmentRoot.AddComponent<DestructionController>();
+                if (Application.isEditor && !Application.isPlaying)
+                {
+                    fragmentRoot.AddComponent<DestructionController>();
+                    fragmentRoot.AddComponent<CalculateConnections>();
+                }
+                else
+                    obj.GetComponent<Connections>().ObjectDestroyed();
 
                 // set the destroy times on all of the child objects
                 int childCount = fragmentRoot.transform.childCount;
                 for (int i = 0; i < childCount; i++)
                 {
-                    fragmentRoot.transform.GetChild(i).gameObject.AddComponent<FadeDestroy>();
+                    if (Application.isEditor && !Application.isPlaying)
+                    { 
+                        fragmentRoot.transform.GetChild(i).gameObject.AddComponent<Connections>();
+                        var fracture = fragmentRoot.transform.GetChild(i).gameObject.AddComponent<FractureObject>();
+                        fracture.fragmentCount = this.fragmentCount;
+                        fracture.insideMat = this.insideMat;
+                        fracture.ignoreCollision = true;
+                    }
+                    else
+                        fragmentRoot.transform.GetChild(i).gameObject.AddComponent<FadeDestroy>();
                 }
 
                 obj.SetActive(false);
-                Destroy(fragmentTemplate);
+                if (Application.isEditor && !Application.isPlaying)
+                    DestroyImmediate(fragmentTemplate);
+                else
+                    Destroy(fragmentTemplate);
             }
         }
     }

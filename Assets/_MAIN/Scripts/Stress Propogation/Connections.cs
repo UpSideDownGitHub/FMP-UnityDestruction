@@ -1,15 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityFracture.Demo;
 
 namespace UnityFracture
 {
     public class Connections : MonoBehaviour
     {
-        public List<Connections> connections;
+        public List<Connections> connections = new();
 
-        public ShearCalculator shearCalculator;
+        public ShearCalculator shearCalculator = new();
 
-        public float connectionForce = 10f; // the force of a connection
+        public float connectionForce = 100f; // the force of a connection
 
         public void ObjectDestroyed()
         {
@@ -33,13 +34,16 @@ namespace UnityFracture
                 totalForce += nDir * connectionForce;
             }
             shearCalculator.UpdateForces(totalForce);
-            shearCalculator.CalculateShear();
+            if (shearCalculator.CalculateShear())
+            {
+                // shear the object
+                GetComponent<FractureObject>().FractureThis();
+            }
         }
 
         public void AddConnection(Connections connection)
         {
             connections.Add(connection);
-            CalculateForces();
         }
         public void RemoveConnection(Connections connection)
         {

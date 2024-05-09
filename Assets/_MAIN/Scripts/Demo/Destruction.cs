@@ -18,10 +18,6 @@ namespace UnityFracture.Demo
         [Header("Trigger Options")]
         public string triggerTag;
 
-        [Header("Stress Propogation")]
-        public Connections connections;
-
-
         private GameObject fragmentRoot;
         private Vector3 ogPos;
         private Quaternion ogRot;
@@ -70,7 +66,7 @@ namespace UnityFracture.Demo
             colObject.transform.rotation = ogRot;
 
             // Update the connections (to destroy this object)
-            connections.ObjectDestroyed();
+            colObject.GetComponent<Connections>().ObjectDestroyed();
         }
 
         public void FractureThis(Rigidbody collisionRB)
