@@ -66,7 +66,7 @@ namespace UnityFracture.Demo
             colObject.transform.rotation = ogRot;
 
             // Update the connections (to destroy this object)
-            colObject.GetComponent<Connections>().ObjectDestroyed();
+            //colObject.GetComponent<Connections>().ObjectDestroyed();
         }
 
         public void FractureThis(Rigidbody collisionRB)

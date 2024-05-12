@@ -71,7 +71,7 @@ namespace UnityFracture.Demo
                     fragmentRoot.AddComponent<CalculateConnections>();
                 }
                 else
-                    obj.GetComponent<Connections>().ObjectDestroyed();
+                    obj.GetComponentInParent<ConnectionTree>().NodeDestroyed(obj.GetComponent<Connections>());
 
                 // set the destroy times on all of the child objects
                 int childCount = fragmentRoot.transform.childCount;
