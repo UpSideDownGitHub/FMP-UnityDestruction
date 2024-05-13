@@ -8,15 +8,16 @@ using UnityEngine;
 
 namespace UnityFracture
 {
-    [CustomEditor(typeof(ConnectionTree))]
-    public class ConnectionTreeEditor : Editor
+    [CustomEditor(typeof(StressPropogation))]
+    public class StressPropagationEditor : Editor
     {
         public override void OnInspectorGUI()
         {
-            ConnectionTree connections = (ConnectionTree)target;
+            StressPropogation stressProp = (StressPropogation)target;
             base.OnInspectorGUI();
-            if (GUILayout.Button("Find Connections"))
-                connections.CreateTreeFromChildren();
+            if (GUILayout.Button("Get Children"))
+                stressProp.GetAllChildren();
+
         }
     }
 }

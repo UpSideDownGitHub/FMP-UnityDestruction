@@ -64,7 +64,6 @@ namespace UnityFracture
             this.constraints = new List<EdgeConstraint>();
             this.indexMap = new int[positions.Length];
 
-            Debug.Log($"Lengths\nPosition: {positions.Length}\nNormals: {normals.Length}\nUV: {uv.Length}");
             for (int i = 0; i < positions.Length; i++)
             {
                 try

@@ -26,18 +26,13 @@ namespace UnityFracture.Demo
                 return;
             if (collision.contactCount > 0)
             {
-                float collisionForce = collision.impulse.magnitude / Time.fixedDeltaTime;
-                if (collision.collider.CompareTag(triggerTag) &&
-                    collisionForce > minCollisionForce)
-                {
-                    if (!fractureCollision)
-                        FractureThis(gameObject);
-                    else
-                        FractureThis(collision.gameObject);
+                if (!fractureCollision)
+                    FractureThis(gameObject);
+                else
+                    FractureThis(collision.gameObject);
 
-                    if (destroyPost)
-                        Destroy(gameObject);
-                }
+                if (destroyPost)
+                    Destroy(gameObject);
             }
         }
 
@@ -71,7 +66,11 @@ namespace UnityFracture.Demo
                     fragmentRoot.AddComponent<CalculateConnections>();
                 }
                 else
-                    obj.GetComponentInParent<ConnectionTree>().NodeDestroyed(obj.GetComponent<Connections>());
+                {
+                    obj.GetComponent<Connections>().ObjectDestroyed();
+                    obj.GetComponentInParent<StressPropogation>().PartDestroyed();
+                    Destroy(obj);
+                }
 
                 // set the destroy times on all of the child objects
                 int childCount = fragmentRoot.transform.childCount;

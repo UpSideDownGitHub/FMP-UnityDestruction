@@ -8,7 +8,6 @@ namespace UnityFracture
     public class CalculateConnections : MonoBehaviour
     {
         public float epsillon = 0.1f;
-        [Serializable]
         public struct Line
         {
             public Line(Vector3 p1, Vector3 p2)
@@ -19,7 +18,7 @@ namespace UnityFracture
             public Vector3 p1;
             public Vector3 p2;
         }
-        public List<Line> lines = new();
+        private List<Line> lines = new();
 
         public void OnDrawGizmos()
         {
@@ -28,6 +27,7 @@ namespace UnityFracture
                 Gizmos.DrawLine(line.p1, line.p2);
             }
         }
+
 
         public void calculateConnections()
         {

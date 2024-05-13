@@ -23,20 +23,21 @@ namespace UnityFracture
         public List<Connections> connections = new();
         
         public bool rootObject;
-        
+        public bool needsCheck = true;
+        public bool destroyed = false;
+
         //public ShearCalculator shearCalculator = new();
         //public float connectionForce = 100f; // the force of a connection
-        //public void ObjectDestroyed()
-        //{
-        //    // remove all connections to this object
-        //    for (int i = 0; i < connections.Count; i++)
-        //    {
-        //        connections[i].RemoveConnection(this);
-        //        connections[i].CalculateForces();
-        //    }
-        //    // destroy this
-        //    Destroy(this);
-        //}
+        public void ObjectDestroyed()
+        {
+            // remove all connections to this object
+            for (int i = 0; i < connections.Count; i++)
+            {
+                connections[i].RemoveConnection(this);
+            }
+            destroyed = true;
+            connections.Clear();
+        }
         //public void CalculateForces()
         //{
         //    Vector3 totalForce = Vector3.zero;
