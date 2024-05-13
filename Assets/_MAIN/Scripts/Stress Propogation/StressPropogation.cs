@@ -35,13 +35,20 @@ namespace UnityFracture
             if (children.Count == 0)
                 GetAllChildren();
 
+            // reset checking
+            foreach (Connections connection in children)
+            {
+                connection.needsCheck = true;
+            }
             // find the clusters
+            print($"Children: {children.Count}");
             foreach (Connections connection in children)
             {
                 if (connection.needsCheck && !connection.destroyed)
                 {
+                    print("Checking Peice For Cluster");
                     var cluster = FindCluster(connection);
-                    //clusterList.Add(new ClusterList(cluster));
+                    clusterList.Add(new ClusterList(cluster));
                     bool needsBreak = true;
                     foreach (Connections peice in cluster)
                     {
@@ -54,19 +61,13 @@ namespace UnityFracture
                     if (needsBreak)
                     {
                         // break the objects in this cluster
-                        // add the childobject to a parent with rigidbody
                         foreach(Connections peice in cluster)
                         {
-                            //peice.gameObject.GetComponent<FractureObject>().FractureThis();
-                            peice.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                            peice.gameObject.GetComponent<FractureObject>().FractureThis();
+                            //peice.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                         }
                     }
                 }
-            }
-            // reset checking
-            foreach (Connections connection in children)
-            {
-                connection.needsCheck = true;
             }
         }
 
@@ -79,7 +80,7 @@ namespace UnityFracture
             Queue<Connections> queue = new Queue<Connections>();
             queue.Enqueue(con);
             int j = 0;
-            int iterMax = 999;
+            int iterMax = 2000;
             while (queue.Count > 0)
             {
                 var peice = queue.Dequeue();

@@ -545,6 +545,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &245560924
@@ -735,6 +737,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!64 &252399293
@@ -905,6 +909,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &261969016
@@ -1081,6 +1087,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!64 &303909222
@@ -1368,6 +1376,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &355899106
@@ -1542,6 +1552,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &425819542
@@ -1716,6 +1728,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!43 &485951678
@@ -2107,6 +2121,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &555855636
@@ -2397,6 +2413,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &635953999
@@ -2457,6 +2475,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!64 &635954002
@@ -3253,6 +3273,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &778911038
@@ -3567,6 +3589,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!64 &864305533
@@ -3834,6 +3858,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 0
   ignoreCollision: 0
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: Projectile
   minCollisionForce: 1
 --- !u!1 &990195334
@@ -4052,6 +4078,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!64 &994500068
@@ -5083,6 +5111,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &1092492473
@@ -5139,6 +5169,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1092492476
@@ -5313,6 +5345,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1113205306
@@ -5486,6 +5520,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1164513457
@@ -6170,6 +6206,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1278024666
@@ -6804,6 +6842,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &1312192753
@@ -6860,6 +6900,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1312192756
@@ -7032,6 +7074,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1337704209
@@ -7361,6 +7405,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1398392748
@@ -7776,6 +7822,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1490114626
@@ -8280,6 +8328,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1550319551
@@ -8453,6 +8503,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1563355285
@@ -8626,6 +8678,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1573519303
@@ -8799,6 +8853,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1722789262
@@ -9131,6 +9187,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1818545245
@@ -9596,6 +9654,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &1922122887
@@ -9652,6 +9712,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &1922122890
@@ -9942,6 +10004,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!1 &2001115561
@@ -9998,6 +10062,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &2001115564
@@ -10172,6 +10238,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &2005829935
@@ -10506,6 +10574,8 @@ MonoBehaviour:
   fractureCollision: 0
   destroyPost: 1
   ignoreCollision: 1
+  spawnEffect: 0
+  effect: {fileID: 0}
   triggerTag: 
   minCollisionForce: 0
 --- !u!114 &2082217043

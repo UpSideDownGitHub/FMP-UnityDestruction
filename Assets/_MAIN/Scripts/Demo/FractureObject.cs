@@ -1,5 +1,6 @@
 ﻿using JetBrains.Annotations;
 using System;
+using System.Linq.Expressions;
 using UnityEngine;
 
 namespace UnityFracture.Demo
@@ -13,6 +14,10 @@ namespace UnityFracture.Demo
         public bool fractureCollision;
         public bool destroyPost;
         public bool ignoreCollision;
+
+        [Header("Effect Options")]
+        public bool spawnEffect;
+        public GameObject effect;
 
         [Header("Trigger Options")]
         public string triggerTag;
@@ -33,7 +38,8 @@ namespace UnityFracture.Demo
                     if (collision.gameObject.CompareTag(triggerTag))
                         FractureThis(collision.gameObject); 
                 }
-
+                if (spawnEffect)
+                    Instantiate(effect, transform.position, Quaternion.identity);
                 if (destroyPost)
                     Destroy(gameObject);
             }
@@ -70,7 +76,8 @@ namespace UnityFracture.Demo
                 }
                 else
                 {
-                    obj.GetComponent<Connections>().ObjectDestroyed();
+                    if (obj.GetComponent<Connections>())
+                        obj.GetComponent<Connections>().ObjectDestroyed();
                     obj.GetComponentInParent<StressPropogation>().PartDestroyed();
                     Destroy(obj);
                 }
