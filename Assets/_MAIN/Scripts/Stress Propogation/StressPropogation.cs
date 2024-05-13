@@ -63,8 +63,8 @@ namespace UnityFracture
                         // break the objects in this cluster
                         foreach(Connections peice in cluster)
                         {
-                            peice.gameObject.GetComponent<FractureObject>().FractureThis();
-                            //peice.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                            //peice.gameObject.GetComponent<FractureObject>().FractureThis();
+                            peice.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                         }
                     }
                 }
