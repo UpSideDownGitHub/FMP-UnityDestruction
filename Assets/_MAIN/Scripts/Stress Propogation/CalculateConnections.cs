@@ -35,6 +35,11 @@ namespace UnityFracture
             var childMeshes = gameObject.GetComponentsInChildren<MeshCollider>();
             foreach (var collider in childMeshes)
             {
+                collider.gameObject.GetComponent<Connections>().RemoveAllConnections();
+            }
+
+            foreach (var collider in childMeshes)
+            {
                 int triangleCount = collider.sharedMesh.triangles.Length;
                 var verts = collider.sharedMesh.vertices;
                 var tris = collider.sharedMesh.triangles;

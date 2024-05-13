@@ -29,7 +29,10 @@ namespace UnityFracture.Demo
                 if (!fractureCollision)
                     FractureThis(gameObject);
                 else
-                    FractureThis(collision.gameObject);
+                { 
+                    if (collision.gameObject.CompareTag(triggerTag))
+                        FractureThis(collision.gameObject); 
+                }
 
                 if (destroyPost)
                     Destroy(gameObject);

@@ -54,9 +54,11 @@ namespace UnityFracture
                     if (needsBreak)
                     {
                         // break the objects in this cluster
+                        // add the childobject to a parent with rigidbody
                         foreach(Connections peice in cluster)
                         {
-                            peice.gameObject.GetComponent<FractureObject>().FractureThis();
+                            //peice.gameObject.GetComponent<FractureObject>().FractureThis();
+                            peice.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                         }
                     }
                 }

@@ -63,6 +63,10 @@ namespace UnityFracture
         {
             connections.Remove(connection);
         }
+        public void RemoveAllConnections()
+        {
+            connections.Clear();
+        }
         public bool HasConnection(Connections connection)
         {
             return connections.Contains(connection);
