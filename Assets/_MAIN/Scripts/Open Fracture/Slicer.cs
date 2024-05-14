@@ -223,5 +223,9 @@ namespace UnityFracture
                     1);
             }
         }
+        public static bool IsAbovePlane(this Vector3 p, Vector3 n, Vector3 o)
+        {
+            return (n.x * (p.x - o.x) + n.y * (p.y - o.y) + n.z * (p.z - o.z)) >= 0;
+        }
     }
 }
