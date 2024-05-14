@@ -108,7 +108,7 @@ namespace UnityFracture.Demo
                 {
                     case PlayerFireOption.BULLETAREA:
                         GameObject bulletTemp = Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
-                        bullet.GetComponent<Rigidbody>().AddForce(bulletTemp.transform.forward * bulletFireForce);
+                        bulletTemp.GetComponent<Rigidbody>().AddForce(bulletTemp.transform.forward * bulletFireForce);
                         break;
                     case PlayerFireOption.RAYCAST:
                         rayCastActivation.FireRay();

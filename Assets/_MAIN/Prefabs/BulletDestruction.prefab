@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 5982353534597224531}
   - component: {fileID: -6659367597212584229}
   - component: {fileID: 6271236106648768113}
-  - component: {fileID: 1663323813418638771}
+  - component: {fileID: 8986821595614465145}
+  - component: {fileID: 3017277682255628481}
   m_Layer: 0
   m_Name: BulletDestruction
   m_TagString: Projectile
@@ -101,7 +102,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -132,9 +133,9 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1663323813418638771
+--- !u!114 &8986821595614465145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,15 +144,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2844094435825769845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2cfbc2021ba50946b93f4e0c56a14bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c901016eba790947a568cb687c33d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fragmentCount: 10
-  insideMat: {fileID: 2100000, guid: 652107f36a28e44479c0b827dee5852a, type: 2}
-  fractureCollision: 1
-  destroyPost: 1
-  ignoreCollision: 0
-  spawnEffect: 1
-  effect: {fileID: 858662849300924067, guid: f8ba84e43daa93d4e8226af838a8416e, type: 3}
-  triggerTag: D
-  minCollisionForce: 1
+  destructibleTag: Destructible
+--- !u!114 &3017277682255628481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2844094435825769845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c9e0cf9334ca941bc5d62d1ea127e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 5

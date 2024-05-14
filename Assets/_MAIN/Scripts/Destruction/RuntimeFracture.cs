@@ -42,7 +42,7 @@ namespace UnityFracture.Demo
 
             // create the template for the fragments, this will take on all of the components
             // of the current object to make it match (Mesh, Rigidbody, Collider)
-            GameObject fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat);
+            GameObject fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat, false);
 
             // Call the fracture on this object, sending the object, template, and other information
             // needed to fracture the object

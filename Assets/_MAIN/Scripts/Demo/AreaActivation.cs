@@ -24,6 +24,7 @@ namespace UnityFracture
             if (other.CompareTag(destructibleTag))
             {
                 other.gameObject.GetComponent<RuntimeFracture>().FractureThis();
+                Destroy(gameObject);
             }
         }
     }

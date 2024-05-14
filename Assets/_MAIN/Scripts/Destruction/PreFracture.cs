@@ -17,7 +17,7 @@ namespace UnityFracture.Demo
         public Material insideMat;
         [Header("Children Options")]
         public string fractureTag;
-        public LayerMask fractureLayer;
+        public int fractureLayer;
         public int childFragmentCount;
         public Material childInsideMat;
         public bool spawnEffects;

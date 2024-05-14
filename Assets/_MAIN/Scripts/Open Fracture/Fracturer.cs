@@ -105,9 +105,11 @@ namespace UnityFracture
             }
         }
 
-        public static GameObject CreateTemplate(GameObject sender, Material insideMat)
+        public static GameObject CreateTemplate(GameObject sender, Material insideMat, bool keepTag = true)
         {
-            GameObject obj = new("Fragment") { tag = sender.tag };
+            GameObject obj = new("Fragment");
+            if (keepTag)
+                obj.tag = sender.tag;
             obj.AddComponent<MeshFilter>();
 
             var meshRenderer = obj.AddComponent<MeshRenderer>();

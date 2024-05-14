@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Ground
   - Projectile
-  - D
+  - Destructible
   layers:
   - Default
   - TransparentFX
@@ -14,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Destructible
   - 
   - 
   - 
