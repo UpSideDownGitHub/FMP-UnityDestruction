@@ -6,9 +6,20 @@ using UnityEngine;
 
 namespace UnityFracture.Demo
 {
+    /// <summary>
+    /// the two shooting options for the player
+    /// </summary>
+    public enum PlayerFireOption
+    {
+        BULLETAREA,
+        RAYCAST
+    }
+
+    /// <summary>
+    /// player will allow for movement, as well as shooting, using 2 moves, raycast and area with bullets
+    /// </summary>
     public class Player : MonoBehaviour
     {
-
         // https://blog.unity.com/engine-platform/free-vfx-image-sequences-flipbooks (Particle Effect Source)
         [Header("Movement")]
         public Rigidbody rb;
@@ -26,24 +37,40 @@ namespace UnityFracture.Demo
 
         [Header("Shooting")]
         public float fireRate;
-        public float fireDistance;
-        public Transform firePoint;
-        public GameObject CollisionObject;
+        public PlayerFireOption fireOption;
         private float _timeOfNextFire;
-        public GameObject destructionObject;
 
+        [Header("Bullet Options")]
+        public GameObject bullet;
+        public Transform firePoint;
+        public float bulletFireForce;
 
+        [Header("RayCast Options")]
+        public RayCastActivation rayCastActivation;
+
+        /// <summary>
+        /// called before the first update and will lock the cursor the the screen
+        /// to allow for better aiming
+        /// </summary>
         public void Start()
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
 
+        /// <summary>
+        /// Called when [collision enter].
+        /// </summary>
+        /// <param name="collision">The collision object.</param>
         public void OnCollisionEnter(Collision collision)
         {
             // check for enter ground
             if (collision.gameObject.CompareTag(groundTag))
                 grounded = true;
         }
+        /// <summary>
+        /// Called when [collision exit].
+        /// </summary>
+        /// <param name="collision">The collision object</param>
         public void OnCollisionExit(Collision collision)
         {
             // check for left ground
@@ -51,6 +78,9 @@ namespace UnityFracture.Demo
                 grounded = false;
         }
 
+        /// <summary>
+        /// Called once perframe and will apply the movement, rotation, and shooting for the player.
+        /// </summary>
         void Update()
         {
             // get input
@@ -71,12 +101,21 @@ namespace UnityFracture.Demo
             // shooting
             if (Time.time > _timeOfNextFire && Input.GetMouseButtonDown(0))
             {
-                // shoot ray in the distance of the house
-                RaycastHit hit;
-                Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, fireDistance);
-                if (hit.collider != null)
+                // shoot the bullet using one of 2 options available
+                // BULLETAREA -> fires a physical bullet that uses AreaActivation
+                // RAYCAST -> uses RayCastActivation
+                switch(fireOption)
                 {
-                    Instantiate(destructionObject, hit.point, Quaternion.identity);
+                    case PlayerFireOption.BULLETAREA:
+                        GameObject bulletTemp = Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
+                        bullet.GetComponent<Rigidbody>().AddForce(bulletTemp.transform.forward * bulletFireForce);
+                        break;
+                    case PlayerFireOption.RAYCAST:
+                        rayCastActivation.FireRay();
+                        break;
+                    default:
+                        Debug.Log("Error: Player Fire Option Failed");
+                        break;
                 }
             }
         }

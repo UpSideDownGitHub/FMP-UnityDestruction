@@ -80,6 +80,8 @@ namespace UnityFracture.Demo
                 fracture.gameObject.tag = fractureTag;
                 fracture.gameObject.layer = fractureLayer;
                 fracture.spawnEffect = spawnEffects;
+                fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+
             }
 
             // Set this object to false (not destroy in case the user wants to change the parameters)
