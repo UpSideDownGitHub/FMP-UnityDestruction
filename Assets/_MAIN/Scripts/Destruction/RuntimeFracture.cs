@@ -62,13 +62,19 @@ namespace UnityFracture.Demo
                 fragmentCount,
                 floatingDetection,
                 insideMat);
-            
+
             // remove the connections from this object, as well as telling the stress propagation
             // that the object has been destroyed, this will break any neighbouring objects and make them
             // fall
-            gameObject.GetComponent<Connections>().ObjectDestroyed();
-            gameObject.GetComponentInParent<StressPropogation>().PartDestroyed();
-            
+            try
+            {
+                gameObject.GetComponent<Connections>().ObjectDestroyed();
+                gameObject.GetComponentInParent<StressPropogation>().PartDestroyed();
+            }
+            catch
+            {
+                // There are No Connections/Stress Propagation
+            }
             // set the destroy times on all of the child objects, so the fragments dont stay
             // around forever
             int childCount = fragmentRoot.transform.childCount;

@@ -79,6 +79,8 @@ namespace UnityFracture
                         {
                             //peice.gameObject.GetComponent<FractureObject>().FractureThis();
                             peice.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                            // Add the fade destroy object
+                            peice.gameObject.AddComponent<FadeDestroy>().destroyTime = 10;
                             // spawn small smoke effect
                             peice.GetComponent<RuntimeFracture>().SpawnEffect();
                         }

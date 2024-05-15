@@ -367,7 +367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &245560924
 GameObject:
@@ -554,7 +555,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &252399293
 MeshCollider:
@@ -721,7 +723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &261969016
 MonoBehaviour:
@@ -894,7 +897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &303909222
 MeshCollider:
@@ -1178,7 +1182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &355899106
 GameObject:
@@ -1349,7 +1354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &425819542
 GameObject:
@@ -1520,7 +1526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &555855633
 GameObject:
@@ -1573,7 +1580,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &555855636
 MonoBehaviour:
@@ -1860,7 +1868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &635953999
 GameObject:
@@ -1917,7 +1926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &635954002
 MeshCollider:
@@ -2202,7 +2212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &854949246
 GameObject:
@@ -2289,7 +2300,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &864305533
 MeshCollider:
@@ -2460,7 +2472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &994500068
 MeshCollider:
@@ -2812,7 +2825,7 @@ MonoBehaviour:
   groundTag: Ground
   grounded: 1
   cam: {fileID: 1284663725}
-  spawnEffect: 1
+  spawnEffect: 0
   effect: {fileID: 858662849300924067, guid: f8ba84e43daa93d4e8226af838a8416e, type: 3}
   fireRate: 0.25
   fireOption: 1
@@ -3004,7 +3017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1092492473
 GameObject:
@@ -3057,7 +3071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1092492476
 MonoBehaviour:
@@ -3228,7 +3243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1113205306
 MonoBehaviour:
@@ -3398,7 +3414,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1164513457
 MonoBehaviour:
@@ -3904,7 +3921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1278024666
 MonoBehaviour:
@@ -4535,7 +4553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1312192753
 GameObject:
@@ -4588,7 +4607,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1312192756
 MonoBehaviour:
@@ -4757,7 +4777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1337704209
 MonoBehaviour:
@@ -4928,7 +4949,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1398392748
 MonoBehaviour:
@@ -5165,7 +5187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1490114626
 MonoBehaviour:
@@ -5335,7 +5358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1550319551
 MonoBehaviour:
@@ -5505,7 +5529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1563355285
 MonoBehaviour:
@@ -5675,7 +5700,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1573519303
 MonoBehaviour:
@@ -5845,7 +5871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1722789262
 MonoBehaviour:
@@ -6016,7 +6043,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1818545245
 MonoBehaviour:
@@ -6303,7 +6331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1922122887
 GameObject:
@@ -6356,7 +6385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1922122890
 MonoBehaviour:
@@ -6643,7 +6673,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &2001115561
 GameObject:
@@ -6696,7 +6727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2001115564
 MonoBehaviour:
@@ -6867,7 +6899,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2005829935
 MonoBehaviour:
@@ -7038,7 +7071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
-  spawnEffect: 1
+  floatingDetection: 0
+  spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2082217043
 MonoBehaviour:

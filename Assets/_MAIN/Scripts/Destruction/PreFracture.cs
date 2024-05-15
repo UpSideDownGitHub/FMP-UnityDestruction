@@ -9,6 +9,8 @@ namespace UnityFracture.Demo
     /// The class manages the prefractuing of object, this will be done in editor, as such works in complement
     /// with the FractreEditor class that will a button allowing for the fracturing of the object before runtime.
     /// </summary>
+    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(MeshCollider))]
     public class PreFracture : MonoBehaviour
     {
         [Header("Pre-Fracture Options")]
@@ -62,10 +64,8 @@ namespace UnityFracture.Demo
                 insideMat);
 
             // add all of the main scripts to the fragment root to allow for desired functonality
-            // DestructionController -> Allow for optimisation of children
             // CalculateConnections -> To clalcualte the connections in the children
             // StressPropogation -> To propogate the stress through the object
-            var destController = fragmentRoot.AddComponent<DestructionController>();
             var calcConnections = fragmentRoot.AddComponent<CalculateConnections>();
             var stressProp = fragmentRoot.AddComponent<StressPropogation>();
 
@@ -90,7 +90,6 @@ namespace UnityFracture.Demo
             }
 
             // call the base function on the child object, (to set it up correctly)
-            destController.OptmizeChildren();
             stressProp.GetAllChildren();
             calcConnections.calculateConnections();
 
