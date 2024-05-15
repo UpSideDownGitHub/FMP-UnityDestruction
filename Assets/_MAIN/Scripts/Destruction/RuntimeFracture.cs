@@ -16,6 +16,7 @@ namespace UnityFracture.Demo
         public int fragmentCount;
         public Material insideMat;
         public bool floatingDetection;
+        public bool copyMaterials;
 
         [Header("Effect Options")]
         public bool spawnEffect;
@@ -52,7 +53,7 @@ namespace UnityFracture.Demo
 
             // create the template for the fragments, this will take on all of the components
             // of the current object to make it match (Mesh, Rigidbody, Collider)
-            GameObject fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat, false);
+            GameObject fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat, copyMaterials, false);
 
             // Call the fracture on this object, sending the object, template, and other information
             // needed to fracture the object
@@ -60,8 +61,7 @@ namespace UnityFracture.Demo
                 fragmentTemplate,
                 fragmentRoot.transform,
                 fragmentCount,
-                floatingDetection,
-                insideMat);
+                floatingDetection);
 
             // remove the connections from this object, as well as telling the stress propagation
             // that the object has been destroyed, this will break any neighbouring objects and make them

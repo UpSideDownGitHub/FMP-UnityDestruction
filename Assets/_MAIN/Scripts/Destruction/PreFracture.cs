@@ -17,12 +17,14 @@ namespace UnityFracture.Demo
         [Range(1, 1024)]
         public int fragmentCount = 10;
         public Material insideMat;
+        public bool copyMaterials = true;
         public bool removeIslands = true;
         [Header("Children Options")]
         public string fractureTag = "Destructible";
         public int fractureLayer = 6;
         public int childFragmentCount = 10;
         public Material childInsideMat;
+        public bool childCopyMaterials = true;
         public bool spawnEffects;
         public GameObject effectToSpawn;
         public bool childRemoveIslands = false;
@@ -52,7 +54,7 @@ namespace UnityFracture.Demo
 
             // create the template for the fragments, this will take on all of the components
             // of the current object to make it match (Mesh, Rigidbody, Collider)
-            GameObject fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat);
+            GameObject fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat, copyMaterials);
 
             // Call the fracture on this object, sending the object, template, and other information
             // needed to fracture the object
@@ -60,8 +62,7 @@ namespace UnityFracture.Demo
                 fragmentTemplate,
                 fragmentRoot.transform,
                 fragmentCount,
-                removeIslands,
-                insideMat);
+                removeIslands);
 
             // add all of the main scripts to the fragment root to allow for desired functonality
             // CalculateConnections -> To clalcualte the connections in the children
@@ -86,6 +87,7 @@ namespace UnityFracture.Demo
                 fracture.spawnEffect = spawnEffects;
                 fracture.effect = effectToSpawn;
                 fracture.floatingDetection = childRemoveIslands;
+                fracture.copyMaterials = childCopyMaterials;
                 fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             }
 

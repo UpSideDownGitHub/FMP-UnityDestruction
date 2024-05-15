@@ -28,8 +28,7 @@ namespace UnityFracture
                                     GameObject fractureTemplate,
                                     Transform parent,
                                     int fragmentCount,
-                                    bool detectFloating,
-                                    Material insideMat)
+                                    bool detectFloating)
         {
             // Define our source mesh data for the fracturing
             MeshData sourceMesh = new MeshData(sourceObject.GetComponent<MeshFilter>().sharedMesh);
@@ -146,7 +145,7 @@ namespace UnityFracture
         /// <param name="insideMat">The inside mat.</param>
         /// <param name="keepTag">if set to <c>true</c> [keep tag].</param>
         /// <returns></returns>
-        public static GameObject CreateTemplate(GameObject sender, Material insideMat, bool keepTag = true)
+        public static GameObject CreateTemplate(GameObject sender, Material insideMat, bool copyMaterials = false, bool keepTag = true)
         {
             // create the object
             GameObject obj = new("Fragment");
@@ -157,8 +156,10 @@ namespace UnityFracture
             // copy over the mesh render & filter
             obj.AddComponent<MeshFilter>();
             var meshRenderer = obj.AddComponent<MeshRenderer>();
-            meshRenderer.sharedMaterials = new Material[2] { sender.GetComponent<MeshRenderer>().sharedMaterial,
-                insideMat};
+            if (copyMaterials)
+                meshRenderer.sharedMaterials = sender.GetComponent<MeshRenderer>().sharedMaterials;
+            else
+                meshRenderer.sharedMaterials = new Material[2] { sender.GetComponent<MeshRenderer>().sharedMaterial, insideMat };
 
             // copy over the collider
             var thisCollider = sender.GetComponent<Collider>();
