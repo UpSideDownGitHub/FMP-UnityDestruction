@@ -5,6 +5,12 @@ using UnityFracture.Demo;
 
 namespace UnityFracture
 {
+    /// <summary>
+    /// class to calcualte the stress propagating through the object
+    /// calcualtes peices left floating
+    /// TODO:
+    ///     find peices that are under to much stress and breaks them
+    /// </summary>
     public class StressPropogation : MonoBehaviour
     {
         public List<Connections> children = new();
@@ -19,6 +25,9 @@ namespace UnityFracture
         }
         public List<ClusterList> clusterList = new();
 
+        /// <summary>
+        /// Gets all children.
+        /// </summary>
         public void GetAllChildren()
         {
             children.Clear();
@@ -29,9 +38,13 @@ namespace UnityFracture
                     children.Add(transform.GetChild(i).GetComponent<Connections>());
             } 
         }
-        
+
+        /// <summary>
+        /// Parts the destroyed.
+        /// </summary>
         public void PartDestroyed()
         {
+            // if there are no children then get the children
             if (children.Count == 0)
                 GetAllChildren();
 
@@ -40,16 +53,16 @@ namespace UnityFracture
             {
                 connection.needsCheck = true;
             }
-            // find the clusters
-            print($"Children: {children.Count}");
+            // find all of the clusters of objects
             foreach (Connections connection in children)
             {
+                // if this object has not been checked
                 if (connection.needsCheck && !connection.destroyed)
                 {
-                    print("Checking Peice For Cluster");
+                    // find the cluster on this object
                     var cluster = FindCluster(connection);
-                    clusterList.Add(new ClusterList(cluster));
                     bool needsBreak = true;
+                    // if this cluster has a root object then set it to not break
                     foreach (Connections peice in cluster)
                     {
                         if (peice.rootObject)
@@ -58,6 +71,7 @@ namespace UnityFracture
                             break;
                         }
                     }
+                    // if the cluster does not have a root object then break the cluster
                     if (needsBreak)
                     {
                         // break the objects in this cluster
@@ -65,14 +79,22 @@ namespace UnityFracture
                         {
                             //peice.gameObject.GetComponent<FractureObject>().FractureThis();
                             peice.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                            // spawn small smoke effect
+                            peice.GetComponent<RuntimeFracture>().SpawnEffect();
                         }
                     }
                 }
             }
         }
 
+        /// <summary>
+        /// Finds the cluster.
+        /// </summary>
+        /// <param name="con">The current connection.</param>
+        /// <returns>List of connections forming a cluster</returns>
         public List<Connections> FindCluster(Connections con)
         {
+            // initilise a queue to hold breadth first search through the graph of connections
             List<int> ids = new List<int>();
             List<Connections> connections = new();
             con.needsCheck = false;
@@ -81,6 +103,7 @@ namespace UnityFracture
             queue.Enqueue(con);
             int j = 0;
             int iterMax = 2000;
+            // breadth first search to find all connections in this cluster
             while (queue.Count > 0)
             {
                 var peice = queue.Dequeue();
@@ -90,9 +113,7 @@ namespace UnityFracture
                 for (int i = 0; i < peice.connections.Count; i++)
                 {
                     if (!ids.Contains(peice.connections[i].gameObject.GetInstanceID()))
-                    {
                         queue.Enqueue(peice.connections[i]);
-                    }
                 }
                 j++;
                 if (j > iterMax)

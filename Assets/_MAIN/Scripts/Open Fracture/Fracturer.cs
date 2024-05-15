@@ -13,27 +13,43 @@ namespace UnityFracture
 {
     public static class Fracturer
     {
+        /// <summary>
+        /// Generates the mesh fragments based on the provided options. The generated fragment objects are
+        /// stored as children of `fragmentParent`
+        /// </summary>
+        /// <param name="sourceObject">The source object.</param>
+        /// <param name="fractureTemplate">The fracture template.</param>
+        /// <param name="parent">The parent.</param>
+        /// <param name="fragmentCount">The fragment count.</param>
+        /// <param name="insideMat">The inside mat.</param>
         public static void Fracture(GameObject sourceObject,
                                     GameObject fractureTemplate,
                                     Transform parent,
                                     int fragmentCount,
                                     Material insideMat)
         {
-            // CHANGED THE FOLLOWING LINE TO MESH insted of SHARED MESH
+            // Define our source mesh data for the fracturing
             MeshData sourceMesh = new MeshData(sourceObject.GetComponent<MeshFilter>().sharedMesh);
+
+            // We begin by fragmenting the source mesh, then process each fragment in a FIFO queue
+            // until we achieve the target fragment count.
             var fragments = new Queue<MeshData>();
             fragments.Enqueue(sourceMesh);
 
+            // Subdivide the mesh into multiple fragments until we reach the fragment limit
             MeshData topSlice, bottomSlice;
             while (fragments.Count < fragmentCount)
             {
                 MeshData meshData = fragments.Dequeue();
                 meshData.Calculatebounds();
+
+                // Select an arbitrary fracture plane normal
                 Vector3 normal = new Vector3(
                     UnityEngine.Random.Range(-1f, 1f),
                     UnityEngine.Random.Range(-1f, 1f),
                     UnityEngine.Random.Range(-1f, 1f));
 
+                // slice the mesh along this normal
                 Slicer.Slice(meshData,
                                  normal,
                                  meshData.bounds.center,
@@ -44,6 +60,7 @@ namespace UnityFracture
                 fragments.Enqueue(bottomSlice);
             }
 
+            // create all of the fragments
             int i = 0;
             foreach (MeshData meshData in fragments)
             {
@@ -56,72 +73,89 @@ namespace UnityFracture
 
         }
 
+        /// <summary>
+        /// Creates a new GameObject from the fragment data
+        /// </summary>
+        /// <param name="meshData">The mesh data.</param>
+        /// <param name="sourceObject">The source object.</param>
+        /// <param name="template">The template.</param>
+        /// <param name="parent">The parent.</param>
+        /// <param name="i">The i.</param>
         public static void CreateFragement(MeshData meshData,
                                            GameObject sourceObject,
                                            GameObject template,
                                            Transform parent,
                                            ref int i)
         {
-
+            // If there is no mesh data, don't create an object
             if (meshData.triangles.Length == 0) return;
 
             Mesh[] meshes;
             Mesh fragmentMesh = meshData.ToMesh();
-
-            meshes = new Mesh[] { fragmentMesh }; // remove this line once below done
-                                                  // calculate the floating meshes
 
             var parentSize = sourceObject.GetComponent<MeshFilter>().sharedMesh.bounds.size;
             var parentMass = 1f;
             if (sourceObject.GetComponent<Rigidbody>())
                 parentMass = sourceObject.GetComponent<Rigidbody>().mass;
 
-            for (int k = 0; k < meshes.Length; k++)
-            {
-                GameObject fragment = GameObject.Instantiate(template, parent);
-                fragment.name = $"Fragment{i}";
-                fragment.transform.localPosition = Vector3.zero;
-                fragment.transform.localRotation = Quaternion.identity;
-                fragment.transform.localScale = sourceObject.transform.localScale;
+            GameObject fragment = GameObject.Instantiate(template, parent);
+            fragment.name = $"Fragment{i}";
+            fragment.transform.localPosition = Vector3.zero;
+            fragment.transform.localRotation = Quaternion.identity;
+            fragment.transform.localScale = sourceObject.transform.localScale;
 
-                meshes[k].name = Guid.NewGuid().ToString();
+            fragmentMesh.name = Guid.NewGuid().ToString();
 
-                var meshFilter = fragment.GetComponent<MeshFilter>();
-                meshFilter.sharedMesh = meshes[k];
+            // Update mesh to the new sliced mesh
+            var meshFilter = fragment.GetComponent<MeshFilter>();
+            meshFilter.sharedMesh = fragmentMesh;
 
-                var collider = fragment.GetComponent<MeshCollider>();
+            var collider = fragment.GetComponent<MeshCollider>();
 
-                collider.sharedMesh = meshes[k];
-                collider.convex = true;
-                collider.sharedMaterial = fragment.GetComponent<Collider>().sharedMaterial;
+            // If fragment collisions are disabled, collider will be null
+            collider.sharedMesh = fragmentMesh;
+            collider.convex = true;
+            collider.sharedMaterial = fragment.GetComponent<Collider>().sharedMaterial;
 
-                var rigidBody = fragment.GetComponent<Rigidbody>();
+            // Compute mass of the sliced object by dividing mesh bounds by density
+            var rigidBody = fragment.GetComponent<Rigidbody>();
+            var size = fragmentMesh.bounds.size;
+            float density = (parentSize.x * parentSize.y * parentSize.z) / parentMass;
+            rigidBody.mass = (size.x * size.y * size.z) / density;
 
-                var size = fragmentMesh.bounds.size;
-                float density = (parentSize.x * parentSize.y * parentSize.z) / parentMass;
-                rigidBody.mass = (size.x * size.y * size.z) / density;
+            i++;
 
-                i++;
-            }
         }
 
+        /// <summary>
+        /// Creates the template for the fragment
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="insideMat">The inside mat.</param>
+        /// <param name="keepTag">if set to <c>true</c> [keep tag].</param>
+        /// <returns></returns>
         public static GameObject CreateTemplate(GameObject sender, Material insideMat, bool keepTag = true)
         {
+            // create the object
             GameObject obj = new("Fragment");
+            // if need to keep the same tag then set the tag
             if (keepTag)
                 obj.tag = sender.tag;
-            obj.AddComponent<MeshFilter>();
 
+            // copy over the mesh render & filter
+            obj.AddComponent<MeshFilter>();
             var meshRenderer = obj.AddComponent<MeshRenderer>();
             meshRenderer.sharedMaterials = new Material[2] { sender.GetComponent<MeshRenderer>().sharedMaterial,
                 insideMat};
 
+            // copy over the collider
             var thisCollider = sender.GetComponent<Collider>();
             var fragmentCollider = obj.AddComponent<MeshCollider>();
             fragmentCollider.convex = true;
             fragmentCollider.sharedMaterial = thisCollider.sharedMaterial;
             fragmentCollider.isTrigger = thisCollider.isTrigger;
 
+            // copy over the rigidbody
             var thisRigidBody = sender.GetComponent<Rigidbody>();
             var fragmentRigidBody = obj.AddComponent<Rigidbody>();
             fragmentRigidBody.velocity = thisRigidBody.velocity;
@@ -130,6 +164,7 @@ namespace UnityFracture
             fragmentRigidBody.angularDrag = thisRigidBody.angularDrag;
             fragmentRigidBody.useGravity = thisRigidBody.useGravity;
 
+            // return the created object
             return obj;
         }
     }

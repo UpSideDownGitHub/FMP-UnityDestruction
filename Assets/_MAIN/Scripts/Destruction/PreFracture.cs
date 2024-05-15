@@ -21,6 +21,7 @@ namespace UnityFracture.Demo
         public int childFragmentCount;
         public Material childInsideMat;
         public bool spawnEffects;
+        public GameObject effectToSpawn;
 
         private GameObject fragmentRoot;
 
@@ -61,9 +62,9 @@ namespace UnityFracture.Demo
             // DestructionController -> Allow for optimisation of children
             // CalculateConnections -> To clalcualte the connections in the children
             // StressPropogation -> To propogate the stress through the object
-            fragmentRoot.AddComponent<DestructionController>();
-            fragmentRoot.AddComponent<CalculateConnections>();
-            fragmentRoot.AddComponent<StressPropogation>();
+            var destController = fragmentRoot.AddComponent<DestructionController>();
+            var calcConnections = fragmentRoot.AddComponent<CalculateConnections>();
+            var stressProp = fragmentRoot.AddComponent<StressPropogation>();
 
 
             // add needed components to the children to ensure desired functonality as well as 
@@ -80,9 +81,14 @@ namespace UnityFracture.Demo
                 fracture.gameObject.tag = fractureTag;
                 fracture.gameObject.layer = fractureLayer;
                 fracture.spawnEffect = spawnEffects;
+                fracture.effect = effectToSpawn;
                 fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-
             }
+
+            // call the base function on the child object, (to set it up correctly)
+            destController.OptmizeChildren();
+            stressProp.GetAllChildren();
+            calcConnections.calculateConnections();
 
             // Set this object to false (not destroy in case the user wants to change the parameters)
             // then destroy the template created, DestroyImmediate so it will work in editor.

@@ -7,10 +7,16 @@ using UnityEngine;
 
 namespace UnityFracture
 {
+    /// <summary>
+    /// Manages caclulating the shear strenghths currently being applied to the object
+    /// </summary>
     public class ShearCalculator
     {
         public StressTensor stressTensor;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ShearCalculator"/> class.
+        /// </summary>
         public ShearCalculator()
         {
             // calculate princible stress
@@ -24,11 +30,19 @@ namespace UnityFracture
             stressTensor.SetStress(0, 2, 50f);   // τ_xz (shear stress)
         }
 
+        /// <summary>
+        /// Updates the forces.
+        /// </summary>
+        /// <param name="forces">The forces.</param>
         public void UpdateForces(Vector3 forces)
         {
             stressTensor.UpdateStress(forces);
         }
 
+        /// <summary>
+        /// Calculates the shear.
+        /// </summary>
+        /// <returns></returns>
         public bool CalculateShear()
         {
             // Compute principal stresses

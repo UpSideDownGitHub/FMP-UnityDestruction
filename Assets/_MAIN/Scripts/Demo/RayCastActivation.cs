@@ -34,14 +34,18 @@ namespace UnityFracture
         /// <summary>
         /// Fires the ray from the ceter for the screen in the destructible layer
         /// </summary>
-        public void FireRay()
+        public void FireRay(GameObject effect, bool spawnEffect)
         {
             RaycastHit hit;
             // create a ray that points in from the center of the screen
             Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             // if the raycast hits and object then destroy it with "FractureThis"
             if (Physics.Raycast(ray, out hit, maxDistance, destructibleLayer))
+            { 
                 hit.collider.gameObject.GetComponent<RuntimeFracture>().FractureThis();
+                if (spawnEffect)
+                    Instantiate(effect, hit.point, Quaternion.identity);
+            }
         }
     }
 }

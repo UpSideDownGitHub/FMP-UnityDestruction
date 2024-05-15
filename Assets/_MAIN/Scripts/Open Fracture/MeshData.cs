@@ -8,15 +8,27 @@ using UnityEngine;
 using UnityEngine.Rendering;
 namespace UnityFracture
 {
+    /// <summary>
+    /// Data structure used for storing mesh data during the fragmenting process
+    /// </summary>
     public class MeshData
     {
+        // Vertex buffer for the non-cut mesh faces
         public List<MeshVertex> vertices;
+        // Vertex buffer for the cut mesh faces
         public List<MeshVertex> cutvertices;
+        // Index buffer for each submesh
         public List<int>[] triangles;
+        // List of edges constraints for the cut-face triangulation
         public List<EdgeConstraint> constraints;
+        // Map between vertex indices in the source mesh and new indices for the sliced mesh
         public int[] indexMap;
+        // The bounds of the vertex data (must manually call UpdateBounds() to update)
         public Bounds bounds;
 
+        /// <summary>
+        /// Gets the total number of triangles across all sub meshes
+        /// </summary>
         public int triangleCount
         {
             get
@@ -30,6 +42,9 @@ namespace UnityFracture
             }
         }
 
+        /// <summary>
+        /// Gets the total number of vertices in the mesh
+        /// </summary>
         public int vertexCount
         {
             get
@@ -38,6 +53,11 @@ namespace UnityFracture
             }
         }
 
+        /// <summary>
+        /// Initializes a new sliced mesh
+        /// </summary>
+        /// <param name="vertexCount">The vertex count.</param>
+        /// <param name="triangleCount">The triangle count.</param>
         public MeshData(int vertexCount, int triangleCount)
         {
             this.vertices = new List<MeshVertex>(vertexCount);
@@ -45,14 +65,18 @@ namespace UnityFracture
 
             // Store triangles for each submesh separately
             this.triangles = new List<int>[] {
-            new List<int>(triangleCount),
-            new List<int>(triangleCount / 10)
-        };
+                new List<int>(triangleCount),
+                new List<int>(triangleCount / 10)
+            };
 
             this.constraints = new List<EdgeConstraint>();
             this.indexMap = new int[vertexCount];
         }
 
+        /// <summary>
+        /// Creates a new sliced mesh dataset from source mesh data
+        /// </summary>
+        /// <param name="mesh">The source mesh data.</param>
         public MeshData(Mesh mesh)
         {
             var positions = mesh.vertices;
@@ -64,8 +88,10 @@ namespace UnityFracture
             this.constraints = new List<EdgeConstraint>();
             this.indexMap = new int[positions.Length];
 
+            // Add mesh vertices
             for (int i = 0; i < positions.Length; i++)
             {
+                // tru and add normals and UV but if not availbe then dont add
                 try
                 {
                     this.vertices.Add(new MeshVertex(positions[i], normals[i], uv[i]));
@@ -76,34 +102,54 @@ namespace UnityFracture
                 }
             }
 
+            // Only meshes with one submesh are currently supported
             this.triangles = new List<int>[2];
             this.triangles[0] = new List<int>(mesh.GetTriangles(0));
 
             if (mesh.subMeshCount >= 2)
-            {
-                this.triangles[1] = new List<int>(mesh.GetTriangles(1));
-            }
+                triangles[1] = new List<int>(mesh.GetTriangles(1));
             else
-            {
-                this.triangles[1] = new List<int>(mesh.triangles.Length / 10);
-            }
+                triangles[1] = new List<int>(mesh.triangles.Length / 10);
 
             this.Calculatebounds();
         }
 
+        /// <summary>
+        /// Adds a new cut face vertex
+        /// </summary>
+        /// <param name="position">The vertex position</param>
+        /// <param name="normal">The vertex normal</param>
+        /// <param name="uv">The vertex UV coordinates</param>
+        /// <returns>Returns the index of the vertex in the cutVertices array</returns>
         public void AddCutFaceVertex(Vector3 position, Vector3 normal, Vector2 uv)
         {
             var vertex = new MeshVertex(position, normal, uv);
+            // Add the vertex to both the normal mesh vertex data and the cut face vertex data
+            // The vertex on the cut face will have different normal/uv coordinates which are
+            // populated with the correct values later in the triangulation process.
             this.vertices.Add(vertex);
             this.cutvertices.Add(vertex);
         }
 
+        /// <summary>
+        /// Adds a new vertex to this mesh that is mapped to the source mesh
+        /// </summary>
+        /// <param name="vertex">Vertex data</param>
+        /// <param name="sourceIndex">Index of the vertex in the source mesh</param>
         public void AddMappedVertex(MeshVertex vertex, int sourceIndex)
         {
             this.vertices.Add(vertex);
             this.indexMap[sourceIndex] = this.vertices.Count - 1;
         }
 
+        /// <summary>
+        /// Adds a new triangle to this mesh. The arguments v1, v2, v3 are the indexes of the
+        /// vertices relative to this mesh's list of vertices; no mapping is performed.
+        /// </summary>
+        /// <param name="v1">Index of the first vertex</param>
+        /// <param name="v2">Index of the second vertex</param>
+        /// <param name="v3">Index of the third vertex</param>
+        /// <param name="subMesh">The sub-mesh to add the triangle to</param>
         public void AddTriangle(int v1, int v2, int v3, int subMesh)
         {
             this.triangles[subMesh].Add(v1);
@@ -111,6 +157,14 @@ namespace UnityFracture
             this.triangles[subMesh].Add(v3);
         }
 
+        /// <summary>
+        /// Adds a new triangle to this mesh. The arguments v1, v2, v3 are the indices of the
+        /// vertices in the original mesh. These vertices are mapped to the indices in the sliced mesh.
+        /// </summary>
+        /// <param name="v1">Index of the first vertex</param>
+        /// <param name="v2">Index of the second vertex</param>
+        /// <param name="v3">Index of the third vertex</param>
+        /// <param name="subMesh">The sub-mesh to add the triangle to</param>
         public void AddMappedTriangle(int v1, int v2, int v3, int subMesh)
         {
             this.triangles[subMesh].Add(indexMap[v1]);
@@ -118,12 +172,24 @@ namespace UnityFracture
             this.triangles[subMesh].Add(indexMap[v3]);
         }
 
+        /// <summary>
+        /// Finds coincident vertices on the cut face and welds them together.
+        /// </summary>
         public void WeldCutFacevertices()
         {
+            // Temporary array containing the unique (welded) vertices
+            // Initialize capacity to current number of cut vertices to prevent
+            // unnecessary reallocations
             List<MeshVertex> weldedVerts = new List<MeshVertex>(cutvertices.Count);
+            // We also keep track of the index mapping between the skipped vertices
+            // and the index of the welded vertex so we can update the edges
             int[] indexMap = new int[cutvertices.Count];
+            // Number of welded vertices in the temp array
             int k = 0;
 
+            // Loop through each vertex, identifying duplicates. Must compare directly
+            // because floating point inconsistencies cause a hash table to be unreliable
+            // for vertices that are very close together but not directly coincident
             for (int i = 0; i < cutvertices.Count; i++)
             {
                 bool duplicate = false;
@@ -145,6 +211,7 @@ namespace UnityFracture
                 }
             }
 
+            // Update the edges
             for (int i = 0; i < constraints.Count; i++)
             {
                 var edge = constraints[i];
@@ -154,20 +221,31 @@ namespace UnityFracture
 
             weldedVerts.TrimExcess();
 
-            this.cutvertices = new List<MeshVertex>(weldedVerts);
+            // Update the cut vertices
+            cutvertices = new List<MeshVertex>(weldedVerts);
         }
 
+        /// <summary>
+        /// Gets the triangles for the specified sub mesh
+        /// </summary>
+        /// <param name="subMeshIndex">The index of the submesh</param>
+        /// <returns></returns>
         public int[] Gettriangles(int subMeshIndex)
         {
-            return this.triangles[subMeshIndex].ToArray();
+            return triangles[subMeshIndex].ToArray();
         }
 
+        /// <summary>
+        /// Calculates the bounds of the mesh data
+        /// </summary>
         public void Calculatebounds()
         {
             float vertexCount = (float)vertices.Count;
             Vector3 min = new Vector3(float.MaxValue, float.MaxValue, float.MaxValue);
             Vector3 max = new Vector3(float.MinValue, float.MinValue, float.MinValue);
 
+            // The cut face does not modify the extents of the object, so we only need to
+            // loop through the original vertices to determine the bounds
             foreach (MeshVertex vertex in vertices)
             {
                 if (vertex.position.x < min.x) min.x = vertex.position.x;
@@ -181,15 +259,19 @@ namespace UnityFracture
             this.bounds = new Bounds((max + min) / 2f, max - min);
         }
 
+        /// <summary>
+        /// Converts the sliced mesh data into a mesh
+        /// </summary>
+        /// <returns>Returns the mesh object</returns>
         public Mesh ToMesh()
         {
             Mesh mesh = new Mesh();
             var layout = new[]
             {
-            new VertexAttributeDescriptor(VertexAttribute.Position, VertexAttributeFormat.Float32, 3),
-            new VertexAttributeDescriptor(VertexAttribute.Normal, VertexAttributeFormat.Float32, 3),
-            new VertexAttributeDescriptor(VertexAttribute.TexCoord0, VertexAttributeFormat.Float32, 2),
-        };
+                new VertexAttributeDescriptor(VertexAttribute.Position, VertexAttributeFormat.Float32, 3),
+                new VertexAttributeDescriptor(VertexAttribute.Normal, VertexAttributeFormat.Float32, 3),
+                new VertexAttributeDescriptor(VertexAttribute.TexCoord0, VertexAttributeFormat.Float32, 2),
+            };
             mesh.SetIndexBufferParams(triangleCount, IndexFormat.UInt32);
             mesh.SetVertexBufferParams(vertexCount, layout);
             mesh.SetVertexBufferData(vertices, 0, 0, vertices.Count);

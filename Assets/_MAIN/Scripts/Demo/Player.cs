@@ -35,10 +35,14 @@ namespace UnityFracture.Demo
         [Header("Camera")]
         public GameObject cam;
 
+        [Header("Effect Spawning")]
+        public bool spawnEffect;
+        public GameObject effect;
+
         [Header("Shooting")]
         public float fireRate;
         public PlayerFireOption fireOption;
-        private float _timeOfNextFire;
+        private float _timeOfNextFire = 0;
 
         [Header("Bullet Options")]
         public GameObject bullet;
@@ -101,17 +105,19 @@ namespace UnityFracture.Demo
             // shooting
             if (Time.time > _timeOfNextFire && Input.GetMouseButtonDown(0))
             {
+                _timeOfNextFire = Time.time + fireRate;
                 // shoot the bullet using one of 2 options available
                 // BULLETAREA -> fires a physical bullet that uses AreaActivation
                 // RAYCAST -> uses RayCastActivation
-                switch(fireOption)
+                switch (fireOption)
                 {
                     case PlayerFireOption.BULLETAREA:
                         GameObject bulletTemp = Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
                         bulletTemp.GetComponent<Rigidbody>().AddForce(bulletTemp.transform.forward * bulletFireForce);
+                        bulletTemp.GetComponent<AreaActivation>().SetEffect(spawnEffect, effect);
                         break;
                     case PlayerFireOption.RAYCAST:
-                        rayCastActivation.FireRay();
+                        rayCastActivation.FireRay(effect, spawnEffect);
                         break;
                     default:
                         Debug.Log("Error: Player Fire Option Failed");

@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace UnityFracture.Demo
 {
+    /// <summary>
+    /// this script will destroy an object in a given time, but before destroying the object
+    /// it will make it shrink to make it look like it faded away
+    /// </summary>
     public class FadeDestroy : MonoBehaviour
     {
         public float destroyTime = 2f;
@@ -10,6 +14,9 @@ namespace UnityFracture.Demo
         private Vector3 _origScale;
         private float _startTime;
 
+        /// <summary>
+        /// initilise all of the start varaiables so the object gets destroyed at the correct time
+        /// </summary>
         public void Start()
         {
             _timeOfDestroy = Time.time + destroyTime;
@@ -17,9 +24,14 @@ namespace UnityFracture.Demo
             _startTime = Time.time;
         }
 
+        /// <summary>
+        /// will make the object shrink untill it is small enough at which point it will be destroyed
+        /// </summary>
         public void Update()
         {
+            // shirnk the object
             float scaleFactor = 1 - ((Time.time - _startTime) / (_timeOfDestroy - _startTime));
+            // if the object is small enough then destroy if not then update the scale of the object
             if (scaleFactor < 0.0f)
                 Destroy(gameObject);
             else

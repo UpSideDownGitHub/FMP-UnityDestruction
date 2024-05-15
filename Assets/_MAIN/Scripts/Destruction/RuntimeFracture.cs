@@ -23,6 +23,15 @@ namespace UnityFracture.Demo
         private GameObject fragmentRoot;
 
         /// <summary>
+        /// Spawns the effect if spawnEffect is true
+        /// </summary>
+        public void SpawnEffect()
+        {
+            if (spawnEffect)
+                Instantiate(effect, transform.position, Quaternion.identity);
+        }
+
+        /// <summary>
         /// Fracture the current obect
         /// </summary>
         public void FractureThis()
