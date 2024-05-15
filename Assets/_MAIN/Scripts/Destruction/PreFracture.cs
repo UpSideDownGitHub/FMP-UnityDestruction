@@ -13,15 +13,17 @@ namespace UnityFracture.Demo
     {
         [Header("Pre-Fracture Options")]
         [Range(1, 1024)]
-        public int fragmentCount;
+        public int fragmentCount = 10;
         public Material insideMat;
+        public bool removeIslands = true;
         [Header("Children Options")]
-        public string fractureTag;
-        public int fractureLayer;
-        public int childFragmentCount;
+        public string fractureTag = "Destructible";
+        public int fractureLayer = 6;
+        public int childFragmentCount = 10;
         public Material childInsideMat;
         public bool spawnEffects;
         public GameObject effectToSpawn;
+        public bool childRemoveIslands = false;
 
         private GameObject fragmentRoot;
 
@@ -56,6 +58,7 @@ namespace UnityFracture.Demo
                 fragmentTemplate,
                 fragmentRoot.transform,
                 fragmentCount,
+                removeIslands,
                 insideMat);
 
             // add all of the main scripts to the fragment root to allow for desired functonality
@@ -82,6 +85,7 @@ namespace UnityFracture.Demo
                 fracture.gameObject.layer = fractureLayer;
                 fracture.spawnEffect = spawnEffects;
                 fracture.effect = effectToSpawn;
+                fracture.floatingDetection = childRemoveIslands;
                 fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             }
 

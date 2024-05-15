@@ -15,6 +15,7 @@ namespace UnityFracture.Demo
         [Range(1, 1024)]
         public int fragmentCount;
         public Material insideMat;
+        public bool floatingDetection;
 
         [Header("Effect Options")]
         public bool spawnEffect;
@@ -59,6 +60,7 @@ namespace UnityFracture.Demo
                 fragmentTemplate,
                 fragmentRoot.transform,
                 fragmentCount,
+                floatingDetection,
                 insideMat);
             
             // remove the connections from this object, as well as telling the stress propagation
