@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor.MemoryProfiler;
 using UnityEngine;
 using UnityFracture.Demo;
 
@@ -27,7 +29,6 @@ namespace UnityFracture
                 connections[i].RemoveConnection(this);
             }
             destroyed = true;
-            connections.Clear();
         }
 
         /// <summary>

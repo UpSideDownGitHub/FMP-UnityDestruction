@@ -69,6 +69,7 @@ namespace UnityFracture.Demo
             try
             {
                 gameObject.GetComponent<Connections>().ObjectDestroyed();
+                gameObject.GetComponentInParent<StressPropogation>().PropogateStress(gameObject.GetComponent<Connections>());
                 gameObject.GetComponentInParent<StressPropogation>().PartDestroyed();
             }
             catch

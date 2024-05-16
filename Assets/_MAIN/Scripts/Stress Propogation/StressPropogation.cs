@@ -8,11 +8,14 @@ namespace UnityFracture
     /// <summary>
     /// class to calcualte the stress propagating through the object
     /// calcualtes peices left floating
-    /// TODO:
-    ///     find peices that are under to much stress and breaks them
     /// </summary>
     public class StressPropogation : MonoBehaviour
     {
+        [Header("Stress")]
+        public float FractureThreshold = 1;
+        public float forcePerConnection = 1;
+
+        [Header("Childern")]
         public List<Connections> children = new();
         [Serializable]
         public struct ClusterList
@@ -87,6 +90,43 @@ namespace UnityFracture
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Propogates the stress through the object, to check it has enough connections to stay standing
+        /// </summary>
+        public void PropogateStress(Connections mainConnection)
+        {
+            // calculate the connections for there stresses
+            foreach (Connections connection in mainConnection.connections)
+            {
+                float totalForce = 0f;
+                // add upp all of the connections of this object to check if there is enough holding it down
+                foreach (Connections secondaryConnections in connection.connections)
+                {
+                    // if there is still a connection there then calucalte the force of the connection and add it to the stress
+                    if (!secondaryConnections.destroyed)
+                    {
+                        print("Connection");
+                        totalForce += forcePerConnection;
+                    }
+                }                
+                // Check if the forces are to little to hold this object up
+                if (totalForce >= FractureThreshold)
+                {
+                    // destroy this connection
+                    connection.ObjectDestroyed();
+
+                    //peice.gameObject.GetComponent<FractureObject>().FractureThis();
+                    connection.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    // Add the fade destroy object
+                    connection.gameObject.AddComponent<FadeDestroy>().destroyTime = 10;
+                    // spawn small smoke effect
+                    connection.GetComponent<RuntimeFracture>().SpawnEffect();
+                }
+            }
+            // clear the list of connections
+            mainConnection.connections.Clear();
         }
 
         /// <summary>

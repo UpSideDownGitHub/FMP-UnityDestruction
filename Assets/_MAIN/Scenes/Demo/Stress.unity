@@ -213,9 +213,9 @@ GameObject:
   - component: {fileID: 198866238}
   - component: {fileID: 198866239}
   - component: {fileID: 198866240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,8 +351,9 @@ MonoBehaviour:
   - {fileID: 355899114}
   - {fileID: 994500066}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &198866240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +369,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &245560924
@@ -515,9 +517,9 @@ GameObject:
   - component: {fileID: 252399293}
   - component: {fileID: 252399291}
   - component: {fileID: 252399292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (29)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -539,8 +541,9 @@ MonoBehaviour:
   - {fileID: 2001115564}
   - {fileID: 303909220}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &252399292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,6 +559,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &252399293
@@ -687,9 +691,9 @@ GameObject:
   - component: {fileID: 261969017}
   - component: {fileID: 261969016}
   - component: {fileID: 261969015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (11)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,6 +728,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &261969016
@@ -742,8 +747,9 @@ MonoBehaviour:
   - {fileID: 1922122890}
   - {fileID: 1818545245}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &261969017
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -858,9 +864,9 @@ GameObject:
   - component: {fileID: 303909222}
   - component: {fileID: 303909220}
   - component: {fileID: 303909221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (31)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -881,8 +887,9 @@ MonoBehaviour:
   - {fileID: 252399291}
   - {fileID: 1490114626}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &303909221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,6 +905,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &303909222
@@ -1029,9 +1037,9 @@ GameObject:
   - component: {fileID: 316243245}
   - component: {fileID: 316243246}
   - component: {fileID: 316243247}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (5)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1166,8 +1174,9 @@ MonoBehaviour:
   - {fileID: 1919529838}
   - {fileID: 1550319551}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &316243247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,6 +1192,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &355899106
@@ -1200,9 +1210,9 @@ GameObject:
   - component: {fileID: 355899113}
   - component: {fileID: 355899114}
   - component: {fileID: 355899115}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1338,8 +1348,9 @@ MonoBehaviour:
   - {fileID: 425819550}
   - {fileID: 555855636}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &355899115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,6 +1366,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &425819542
@@ -1372,9 +1384,9 @@ GameObject:
   - component: {fileID: 425819549}
   - component: {fileID: 425819550}
   - component: {fileID: 425819551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1510,8 +1522,9 @@ MonoBehaviour:
   - {fileID: 1919529838}
   - {fileID: 1302396000}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &425819551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1527,6 +1540,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &555855633
@@ -1544,9 +1558,9 @@ GameObject:
   - component: {fileID: 555855637}
   - component: {fileID: 555855636}
   - component: {fileID: 555855635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (24)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1581,6 +1595,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &555855636
@@ -1600,8 +1615,9 @@ MonoBehaviour:
   - {fileID: 355899114}
   - {fileID: 1722789262}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &555855637
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1716,9 +1732,9 @@ GameObject:
   - component: {fileID: 633218414}
   - component: {fileID: 633218415}
   - component: {fileID: 633218416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (9)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,8 +1868,9 @@ MonoBehaviour:
   connections:
   - {fileID: 721742835}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &633218416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1869,6 +1886,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &635953999
@@ -1886,9 +1904,9 @@ GameObject:
   - component: {fileID: 635954002}
   - component: {fileID: 635954000}
   - component: {fileID: 635954001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (27)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1910,8 +1928,9 @@ MonoBehaviour:
   - {fileID: 1722789262}
   - {fileID: 252399291}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &635954001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1927,6 +1946,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &635954002
@@ -2058,9 +2078,9 @@ GameObject:
   - component: {fileID: 721742834}
   - component: {fileID: 721742835}
   - component: {fileID: 721742836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (8)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2196,8 +2216,9 @@ MonoBehaviour:
   - {fileID: 1922122890}
   - {fileID: 633218415}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &721742836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,6 +2234,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &854949246
@@ -2261,9 +2283,9 @@ GameObject:
   - component: {fileID: 864305533}
   - component: {fileID: 864305531}
   - component: {fileID: 864305532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (25)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2284,8 +2306,9 @@ MonoBehaviour:
   - {fileID: 994500066}
   - {fileID: 1722789262}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &864305532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2301,6 +2324,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &864305533
@@ -2432,9 +2456,9 @@ GameObject:
   - component: {fileID: 994500068}
   - component: {fileID: 994500066}
   - component: {fileID: 994500067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (23)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2456,8 +2480,9 @@ MonoBehaviour:
   - {fileID: 555855636}
   - {fileID: 864305531}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &994500067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2473,6 +2498,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &994500068
@@ -2850,6 +2876,8 @@ MonoBehaviour:
     m_Bits: 64
   maxDistance: 100
   cam: {fileID: 1284663727}
+  explosionForce: 0
+  explosionRadius: 0
 --- !u!1 &1057976234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,9 +2893,9 @@ GameObject:
   - component: {fileID: 1057976241}
   - component: {fileID: 1057976242}
   - component: {fileID: 1057976243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3001,8 +3029,9 @@ MonoBehaviour:
   connections:
   - {fileID: 198866239}
   rootObject: 1
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &1057976243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3018,6 +3047,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1092492473
@@ -3035,9 +3065,9 @@ GameObject:
   - component: {fileID: 1092492477}
   - component: {fileID: 1092492476}
   - component: {fileID: 1092492475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (16)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3072,6 +3102,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1092492476
@@ -3091,8 +3122,9 @@ MonoBehaviour:
   - {fileID: 2005829935}
   - {fileID: 1113205306}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1092492477
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3207,9 +3239,9 @@ GameObject:
   - component: {fileID: 1113205307}
   - component: {fileID: 1113205306}
   - component: {fileID: 1113205305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (17)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3244,6 +3276,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1113205306
@@ -3262,8 +3295,9 @@ MonoBehaviour:
   - {fileID: 1092492476}
   - {fileID: 1337704209}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1113205307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3378,9 +3412,9 @@ GameObject:
   - component: {fileID: 1164513458}
   - component: {fileID: 1164513457}
   - component: {fileID: 1164513456}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (20)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3415,6 +3449,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1164513457
@@ -3433,8 +3468,9 @@ MonoBehaviour:
   - {fileID: 2005829935}
   - {fileID: 2082217043}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1164513458
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3720,6 +3756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   epsillon: 0.01
+  lines: []
 --- !u!114 &1249332626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3885,9 +3922,9 @@ GameObject:
   - component: {fileID: 1278024667}
   - component: {fileID: 1278024666}
   - component: {fileID: 1278024665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (22)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3922,6 +3959,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1278024666
@@ -3939,8 +3977,9 @@ MonoBehaviour:
   connections:
   - {fileID: 2082217043}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1278024667
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4400,9 +4439,9 @@ GameObject:
   - component: {fileID: 1302395999}
   - component: {fileID: 1302396000}
   - component: {fileID: 1302396001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (6)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4537,8 +4576,9 @@ MonoBehaviour:
   - {fileID: 425819550}
   - {fileID: 1928172520}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &1302396001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4554,6 +4594,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1312192753
@@ -4571,9 +4612,9 @@ GameObject:
   - component: {fileID: 1312192757}
   - component: {fileID: 1312192756}
   - component: {fileID: 1312192755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (14)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4608,6 +4649,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1312192756
@@ -4625,8 +4667,9 @@ MonoBehaviour:
   connections:
   - {fileID: 1563355285}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1312192757
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4741,9 +4784,9 @@ GameObject:
   - component: {fileID: 1337704210}
   - component: {fileID: 1337704209}
   - component: {fileID: 1337704208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (18)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4778,6 +4821,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1337704209
@@ -4797,8 +4841,9 @@ MonoBehaviour:
   - {fileID: 1398392748}
   - {fileID: 2005829935}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1337704210
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4913,9 +4958,9 @@ GameObject:
   - component: {fileID: 1398392749}
   - component: {fileID: 1398392748}
   - component: {fileID: 1398392747}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (33)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4950,6 +4995,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1398392748
@@ -4967,8 +5013,9 @@ MonoBehaviour:
   connections:
   - {fileID: 1337704209}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1398392749
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5151,9 +5198,9 @@ GameObject:
   - component: {fileID: 1490114627}
   - component: {fileID: 1490114626}
   - component: {fileID: 1490114625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (32)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5188,6 +5235,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1490114626
@@ -5206,8 +5254,9 @@ MonoBehaviour:
   - {fileID: 303909220}
   - {fileID: 2001115564}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1490114627
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5322,9 +5371,9 @@ GameObject:
   - component: {fileID: 1550319552}
   - component: {fileID: 1550319551}
   - component: {fileID: 1550319550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (15)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5359,6 +5408,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1550319551
@@ -5377,8 +5427,9 @@ MonoBehaviour:
   - {fileID: 316243246}
   - {fileID: 1092492476}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1550319552
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5493,9 +5544,9 @@ GameObject:
   - component: {fileID: 1563355286}
   - component: {fileID: 1563355285}
   - component: {fileID: 1563355284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (13)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5530,6 +5581,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1563355285
@@ -5548,8 +5600,9 @@ MonoBehaviour:
   - {fileID: 1818545245}
   - {fileID: 1312192756}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1563355286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5664,9 +5717,9 @@ GameObject:
   - component: {fileID: 1573519304}
   - component: {fileID: 1573519303}
   - component: {fileID: 1573519302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (28)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5701,6 +5754,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1573519303
@@ -5719,8 +5773,9 @@ MonoBehaviour:
   - {fileID: 635954000}
   - {fileID: 2001115564}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1573519304
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5835,9 +5890,9 @@ GameObject:
   - component: {fileID: 1722789263}
   - component: {fileID: 1722789262}
   - component: {fileID: 1722789261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (26)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5872,6 +5927,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1722789262
@@ -5891,8 +5947,9 @@ MonoBehaviour:
   - {fileID: 635954000}
   - {fileID: 555855636}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1722789263
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6007,9 +6064,9 @@ GameObject:
   - component: {fileID: 1818545246}
   - component: {fileID: 1818545245}
   - component: {fileID: 1818545244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (12)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6044,6 +6101,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1818545245
@@ -6062,8 +6120,9 @@ MonoBehaviour:
   - {fileID: 261969016}
   - {fileID: 1563355285}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1818545246
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6178,9 +6237,9 @@ GameObject:
   - component: {fileID: 1919529837}
   - component: {fileID: 1919529838}
   - component: {fileID: 1919529839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6315,8 +6374,9 @@ MonoBehaviour:
   - {fileID: 425819550}
   - {fileID: 316243246}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &1919529839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6332,6 +6392,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1922122887
@@ -6349,9 +6410,9 @@ GameObject:
   - component: {fileID: 1922122891}
   - component: {fileID: 1922122890}
   - component: {fileID: 1922122889}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (10)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6386,6 +6447,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1922122890
@@ -6404,8 +6466,9 @@ MonoBehaviour:
   - {fileID: 721742835}
   - {fileID: 261969016}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &1922122891
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6520,9 +6583,9 @@ GameObject:
   - component: {fileID: 1928172519}
   - component: {fileID: 1928172520}
   - component: {fileID: 1928172521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (7)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6657,8 +6720,9 @@ MonoBehaviour:
   - {fileID: 1302396000}
   - {fileID: 721742835}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!114 &1928172521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6674,6 +6738,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &2001115561
@@ -6691,9 +6756,9 @@ GameObject:
   - component: {fileID: 2001115565}
   - component: {fileID: 2001115564}
   - component: {fileID: 2001115563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (30)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6728,6 +6793,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2001115564
@@ -6747,8 +6813,9 @@ MonoBehaviour:
   - {fileID: 1573519303}
   - {fileID: 1490114626}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &2001115565
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6863,9 +6930,9 @@ GameObject:
   - component: {fileID: 2005829936}
   - component: {fileID: 2005829935}
   - component: {fileID: 2005829934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (19)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6900,6 +6967,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2005829935
@@ -6919,8 +6987,9 @@ MonoBehaviour:
   - {fileID: 1337704209}
   - {fileID: 1164513457}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &2005829936
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7035,9 +7104,9 @@ GameObject:
   - component: {fileID: 2082217044}
   - component: {fileID: 2082217043}
   - component: {fileID: 2082217042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (21)
-  m_TagString: D
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7072,6 +7141,7 @@ MonoBehaviour:
   fragmentCount: 10
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
+  copyMaterials: 0
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2082217043
@@ -7090,8 +7160,9 @@ MonoBehaviour:
   - {fileID: 1164513457}
   - {fileID: 1278024666}
   rootObject: 0
-  needsCheck: 0
+  needsCheck: 1
   destroyed: 0
+  forcePerConnection: 1
 --- !u!64 &2082217044
 MeshCollider:
   m_ObjectHideFlags: 0
