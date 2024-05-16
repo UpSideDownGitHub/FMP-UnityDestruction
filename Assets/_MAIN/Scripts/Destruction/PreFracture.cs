@@ -3,7 +3,7 @@ using System;
 using System.Linq.Expressions;
 using UnityEngine;
 
-namespace UnityFracture.Demo
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// The class manages the prefractuing of object, this will be done in editor, as such works in complement

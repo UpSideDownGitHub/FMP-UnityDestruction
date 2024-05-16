@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     public class ShearCalculator : MonoBehaviour
     {

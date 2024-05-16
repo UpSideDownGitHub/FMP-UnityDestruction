@@ -1,12 +1,11 @@
-﻿using Codice.CM.Client.Differences.Merge;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Rendering;
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// Data structure used for storing mesh data during the fragmenting process

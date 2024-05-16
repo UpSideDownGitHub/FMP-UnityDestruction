@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// Class which handles slicing a mesh into two pieces given the origin and normal of the slice plane.

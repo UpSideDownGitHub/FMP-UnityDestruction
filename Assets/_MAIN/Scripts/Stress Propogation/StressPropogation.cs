@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityFracture.Demo;
+using ReubenMiller.Fracture.Demo;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// class to calcualte the stress propagating through the object

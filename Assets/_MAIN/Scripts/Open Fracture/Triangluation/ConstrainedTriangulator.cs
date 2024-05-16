@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// Class for triangulating a set of 3D points with edge constraints. Supports convex and non-convex polygons

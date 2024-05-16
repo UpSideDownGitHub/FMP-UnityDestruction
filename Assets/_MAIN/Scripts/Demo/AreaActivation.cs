@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityFracture.Demo;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture.Demo
 {
     /// <summary>
     /// This is a demo class for how to implement area based destruction,

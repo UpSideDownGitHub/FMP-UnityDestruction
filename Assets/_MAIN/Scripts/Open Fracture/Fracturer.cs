@@ -1,18 +1,16 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Unity.Collections;
-using Unity.VisualScripting.YamlDotNet.Core.Tokens;
+using Unity.Jobs;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.SocialPlatforms.GameCenter;
-using static UnityEditor.Progress;
-
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     public static class Fracturer
     {
@@ -72,8 +70,15 @@ namespace UnityFracture
 
             // create all of the fragments
             int i = 0;
+            List<Mesh> meshes = new();
             foreach (MeshData meshData in fragments)
             {
+                meshes.Add(meshData.ToMesh());
+            }
+            var colliderMeshes = CreateCollidersFast(meshes.ToArray());
+            foreach (Mesh meshData in colliderMeshes)
+            {
+                yield return null;
                 CreateFragement(meshData,
                                 sourceObject,
                                 fractureTemplate,
@@ -133,14 +138,24 @@ namespace UnityFracture
 
             // create all of the fragments
             int i = 0;
+
+            // convert all of the meshes to meshes, and generate their colliders fast
+            List<Mesh> meshes = new();
             foreach (MeshData meshData in fragments)
             {
-                CreateFragement(meshData,
+                meshes.Add(meshData.ToMesh());
+            }
+            var colliderMeshes = CreateCollidersFast(meshes.ToArray());
+            int j = 0;
+            foreach (MeshData meshData in fragments)
+            {
+                CreateFragement(colliderMeshes[j],
                                 sourceObject,
                                 fractureTemplate,
                                 parent,
                                 detectFloating,
                                 ref i);
+                j++;
             }
 
         }
@@ -153,7 +168,7 @@ namespace UnityFracture
         /// <param name="template">The template.</param>
         /// <param name="parent">The parent.</param>
         /// <param name="i">The i.</param>
-        public static void CreateFragement(MeshData meshData,
+        public static void CreateFragement(Mesh fragmentMesh,
                                            GameObject sourceObject,
                                            GameObject template,
                                            Transform parent,
@@ -161,13 +176,15 @@ namespace UnityFracture
                                            ref int i)
         {
             // If there is no mesh data, don't create an object
-            if (meshData.triangles.Length == 0) return;
+            if (fragmentMesh.triangles.Length == 0) return;
 
             Mesh[] meshes;
-            Mesh fragmentMesh = meshData.ToMesh();
 
             if (detectFloating)
+            { 
                 meshes = FindDisconnectedMeshes(fragmentMesh);
+                meshes = CreateCollidersFast(meshes);
+            }
             else
                 meshes = new Mesh[] { fragmentMesh };
 
@@ -188,13 +205,13 @@ namespace UnityFracture
 
                 // Update mesh to the new sliced mesh
                 var meshFilter = fragment.GetComponent<MeshFilter>();
-                meshFilter.sharedMesh = meshes[k];
+                meshFilter.sharedMesh = meshes[k];                
 
                 var collider = fragment.GetComponent<MeshCollider>();
 
                 // If fragment collisions are disabled, collider will be null
                 collider.sharedMesh = meshes[k];
-                collider.convex = true;
+                collider.convex = true; // THIS MIGHT CAUSE AND ISSUE, BUT SHOULDNT AS TELLING IT TO GEN CONVEX
                 collider.sharedMaterial = fragment.GetComponent<Collider>().sharedMaterial;
 
                 // Compute mass of the sliced object by dividing mesh bounds by density
@@ -248,6 +265,39 @@ namespace UnityFracture
 
             // return the created object
             return obj;
+        }
+
+        public static Mesh[] CreateCollidersFast(Mesh[] meshes, int meshesPerJob = 1)
+        {
+            NativeArray<int> meshIds = new NativeArray<int>(meshes.Length, Allocator.TempJob);
+
+            for (int i = 0; i < meshes.Length; ++i)
+            {
+                meshIds[i] = meshes[i].GetInstanceID();
+            }
+
+            // This spreads the expensive operation over all cores.
+            var job = new BakeJob(meshIds);
+            job.Schedule(meshIds.Length, meshesPerJob).Complete();
+
+            meshIds.Dispose();
+
+            return meshes;
+        }
+
+        public struct BakeJob : IJobParallelFor
+        {
+            private NativeArray<int> meshIds;
+
+            public BakeJob(NativeArray<int> meshIds)
+            {
+                this.meshIds = meshIds;
+            }
+
+            public void Execute(int index)
+            {
+                Physics.BakeMesh(meshIds[index], true, MeshColliderCookingOptions.UseFastMidphase);
+            }
         }
 
         // Description of vertex attributes for the island mesh

@@ -1,7 +1,6 @@
-﻿using Unity.VisualScripting.YamlDotNet.Serialization;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace UnityFracture.Demo
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// this script will destroy an object in a given time, but before destroying the object

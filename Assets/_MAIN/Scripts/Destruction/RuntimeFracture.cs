@@ -3,7 +3,7 @@ using System;
 using System.Linq.Expressions;
 using UnityEngine;
 
-namespace UnityFracture.Demo
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// The class manages the fracturing of object at runtime, as such this will break

@@ -1,4 +1,4 @@
-﻿namespace UnityFracture
+﻿namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// Data structure that holds triangulation adjacency data for a quad

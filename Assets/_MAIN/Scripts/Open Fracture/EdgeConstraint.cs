@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// Represents an edge constraint between two vertices in the triangulation

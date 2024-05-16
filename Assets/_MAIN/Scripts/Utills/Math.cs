@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
 
     public static class Math

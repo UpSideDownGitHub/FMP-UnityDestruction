@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// Defines an interface for an object that is sorted by bin number

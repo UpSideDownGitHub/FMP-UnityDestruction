@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace UnityFracture.Demo
+namespace ReubenMiller.Fracture.Demo
 {
     /// <summary>
     /// the two shooting options for the player

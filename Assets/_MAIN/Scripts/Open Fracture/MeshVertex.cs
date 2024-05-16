@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// Data structure containing position/normal/UV data for a single vertex

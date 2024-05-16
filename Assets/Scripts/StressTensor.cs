@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     public class StressTensor
     {

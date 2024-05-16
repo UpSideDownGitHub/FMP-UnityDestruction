@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using TMPro;
 
-namespace UnityFracture.Demo
+namespace ReubenMiller.Fracture.Demo
 {
     public class MainUIManager : MonoBehaviour
     {

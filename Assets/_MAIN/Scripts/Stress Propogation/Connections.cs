@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.MemoryProfiler;
 using UnityEngine;
-using UnityFracture.Demo;
+using ReubenMiller.Fracture.Demo;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// class to hold the connections of each of the children objects.

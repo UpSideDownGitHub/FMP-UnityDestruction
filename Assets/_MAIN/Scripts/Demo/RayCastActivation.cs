@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using UnityFracture.Demo;
+using ReubenMiller.Fracture.Demo;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// This is a demo class for how to implment RayCast activation for destructibles

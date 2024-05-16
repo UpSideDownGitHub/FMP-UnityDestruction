@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// This data structure is used to represent a point during triangulation.

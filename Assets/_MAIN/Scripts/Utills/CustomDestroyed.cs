@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityFracture
+namespace ReubenMiller.Fracture
 {
     /// <summary>
     /// class to destroy objects in a custom amount of time
