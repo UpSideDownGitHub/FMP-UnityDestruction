@@ -28,6 +28,9 @@ namespace UnityFracture.Demo
         public bool spawnEffects;
         public GameObject effectToSpawn;
         public bool childRemoveIslands = false;
+        public bool childAsyncFracture;
+        public bool childAsyncStress;
+        public bool childAsyncFloating;
 
         private GameObject fragmentRoot;
 
@@ -88,6 +91,9 @@ namespace UnityFracture.Demo
                 fracture.effect = effectToSpawn;
                 fracture.floatingDetection = childRemoveIslands;
                 fracture.copyMaterials = childCopyMaterials;
+                fracture.asyncFracture = childAsyncFracture;
+                fracture.asyncFloating = childAsyncFloating;
+                fracture.asyncStress = childAsyncStress;
                 fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             }
 

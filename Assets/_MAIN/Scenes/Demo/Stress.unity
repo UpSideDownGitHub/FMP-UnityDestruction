@@ -353,7 +353,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &198866240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +369,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &245560924
@@ -543,7 +545,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &252399292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,6 +561,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &252399293
@@ -729,6 +733,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &261969016
@@ -749,7 +756,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &261969017
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -889,7 +895,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &303909221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,6 +911,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &303909222
@@ -1176,7 +1184,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &316243247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,6 +1200,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &355899106
@@ -1350,7 +1360,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &355899115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,6 +1376,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &425819542
@@ -1524,7 +1536,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &425819551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,6 +1552,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &555855633
@@ -1596,6 +1610,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &555855636
@@ -1617,7 +1634,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &555855637
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1870,7 +1886,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &633218416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1887,6 +1902,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &635953999
@@ -1930,7 +1948,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &635954001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,6 +1964,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &635954002
@@ -2218,7 +2238,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &721742836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2235,6 +2254,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &854949246
@@ -2308,7 +2330,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &864305532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2325,6 +2346,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &864305533
@@ -2482,7 +2506,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &994500067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2499,6 +2522,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!64 &994500068
@@ -2665,7 +2691,7 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 0
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1036209874}
   m_Lens:
@@ -2876,8 +2902,8 @@ MonoBehaviour:
     m_Bits: 64
   maxDistance: 100
   cam: {fileID: 1284663727}
-  explosionForce: 0
-  explosionRadius: 0
+  explosionForce: 50
+  explosionRadius: 10
 --- !u!1 &1057976234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3031,7 +3057,6 @@ MonoBehaviour:
   rootObject: 1
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &1057976243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3048,6 +3073,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1092492473
@@ -3103,6 +3131,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1092492476
@@ -3124,7 +3155,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1092492477
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3277,6 +3307,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1113205306
@@ -3297,7 +3330,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1113205307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3450,6 +3482,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1164513457
@@ -3470,7 +3505,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1164513458
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3769,6 +3803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1057976242}
   - {fileID: 198866239}
@@ -3960,6 +3996,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1278024666
@@ -3979,7 +4018,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1278024667
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4091,6 +4129,7 @@ GameObject:
   - component: {fileID: 1284663727}
   - component: {fileID: 1284663726}
   - component: {fileID: 1284663729}
+  - component: {fileID: 1284663730}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4150,8 +4189,8 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -4189,7 +4228,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 1
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
@@ -4207,6 +4246,135 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1284663730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284663725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clearColorMode: 0
+  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
+  clearDepth: 1
+  volumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  volumeAnchorOverride: {fileID: 0}
+  antialiasing: 0
+  SMAAQuality: 2
+  dithering: 0
+  stopNaNs: 0
+  taaSharpenStrength: 0.5
+  TAAQuality: 1
+  taaHistorySharpening: 0.35
+  taaAntiFlicker: 0.5
+  taaMotionVectorRejection: 0
+  taaAntiHistoryRinging: 0
+  taaBaseBlendFactor: 0.875
+  taaJitterScale: 1
+  physicalParameters:
+    m_Iso: 200
+    m_ShutterSpeed: 0.005
+    m_Aperture: 16
+    m_FocusDistance: 10
+    m_BladeCount: 5
+    m_Curvature: {x: 2, y: 11}
+    m_BarrelClipping: 0.25
+    m_Anamorphism: 0
+  flipYMode: 0
+  xrRendering: 1
+  fullscreenPassthrough: 0
+  allowDynamicResolution: 0
+  customRenderingSettings: 0
+  invertFaceCulling: 0
+  probeLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hasPersistentHistory: 0
+  screenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  screenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  allowDeepLearningSuperSampling: 1
+  deepLearningSuperSamplingUseCustomQualitySettings: 0
+  deepLearningSuperSamplingQuality: 0
+  deepLearningSuperSamplingUseCustomAttributes: 0
+  deepLearningSuperSamplingUseOptimalSettings: 1
+  deepLearningSuperSamplingSharpening: 0
+  fsrOverrideSharpness: 0
+  fsrSharpness: 0.92
+  exposureTarget: {fileID: 0}
+  materialMipBias: 0
+  m_RenderingPathCustomFrameSettings:
+    bitDatas:
+      data1: 140666587840333
+      data2: 13763000512783810584
+    lodBias: 1
+    lodBiasMode: 0
+    lodBiasQualityLevel: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    sssQualityMode: 0
+    sssQualityLevel: 0
+    sssCustomSampleBudget: 20
+    msaaMode: 1
+    materialQuality: 0
+  renderingPathCustomFrameSettingsOverrideMask:
+    mask:
+      data1: 0
+      data2: 0
+  defaultFrameSettings: 0
+  m_Version: 9
+  m_ObsoleteRenderingPath: 0
+  m_ObsoleteFrameSettings:
+    overrides: 0
+    enableShadow: 0
+    enableContactShadows: 0
+    enableShadowMask: 0
+    enableSSR: 0
+    enableSSAO: 0
+    enableSubsurfaceScattering: 0
+    enableTransmission: 0
+    enableAtmosphericScattering: 0
+    enableVolumetrics: 0
+    enableReprojectionForVolumetrics: 0
+    enableLightLayers: 0
+    enableExposureControl: 1
+    diffuseGlobalDimmer: 0
+    specularGlobalDimmer: 0
+    shaderLitMode: 0
+    enableDepthPrepassWithDeferredRendering: 0
+    enableTransparentPrepass: 0
+    enableMotionVectors: 0
+    enableObjectMotionVectors: 0
+    enableDecals: 0
+    enableRoughRefraction: 0
+    enableTransparentPostpass: 0
+    enableDistortion: 0
+    enablePostprocess: 0
+    enableOpaqueObjects: 0
+    enableTransparentObjects: 0
+    enableRealtimePlanarReflection: 0
+    enableMSAA: 0
+    enableAsyncCompute: 0
+    runLightListAsync: 0
+    runSSRAsync: 0
+    runSSAOAsync: 0
+    runContactShadowsAsync: 0
+    runVolumeVoxelizationAsync: 0
+    lightLoopSettings:
+      overrides: 0
+      enableDeferredTileAndCluster: 0
+      enableComputeLightEvaluation: 0
+      enableComputeLightVariants: 0
+      enableComputeMaterialVariants: 0
+      enableFptlForForwardOpaque: 0
+      enableBigTilePrepass: 0
+      isFptlEnabled: 0
 --- !u!1 &1301935859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,7 +4746,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &1302396001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4595,6 +4762,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1312192753
@@ -4650,6 +4820,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1312192756
@@ -4669,7 +4842,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1312192757
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4822,6 +4994,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1337704209
@@ -4843,7 +5018,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1337704210
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4996,6 +5170,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1398392748
@@ -5015,7 +5192,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1398392749
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5236,6 +5412,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1490114626
@@ -5256,7 +5435,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1490114627
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5409,6 +5587,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1550319551
@@ -5429,7 +5610,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1550319552
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5582,6 +5762,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1563355285
@@ -5602,7 +5785,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1563355286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5755,6 +5937,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1573519303
@@ -5775,7 +5960,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1573519304
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5928,6 +6112,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1722789262
@@ -5949,7 +6136,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1722789263
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6102,6 +6288,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1818545245
@@ -6122,7 +6311,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1818545246
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6376,7 +6564,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &1919529839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6393,6 +6580,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &1922122887
@@ -6448,6 +6638,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &1922122890
@@ -6468,7 +6661,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &1922122891
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6722,7 +6914,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!114 &1928172521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6739,6 +6930,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!1 &2001115561
@@ -6794,6 +6988,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2001115564
@@ -6815,7 +7012,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &2001115565
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6968,6 +7164,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2005829935
@@ -6989,7 +7188,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &2005829936
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7142,6 +7340,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: b0b4de3bd6e976e4f8b3adc6e72377ed, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 1
+  asyncFloating: 1
+  asyncStress: 1
   spawnEffect: 0
   effect: {fileID: 8058797838629240255, guid: 792af9a61eb5d824e88f9afc02bf84c4, type: 3}
 --- !u!114 &2082217043
@@ -7162,7 +7363,6 @@ MonoBehaviour:
   rootObject: 0
   needsCheck: 1
   destroyed: 0
-  forcePerConnection: 1
 --- !u!64 &2082217044
 MeshCollider:
   m_ObjectHideFlags: 0

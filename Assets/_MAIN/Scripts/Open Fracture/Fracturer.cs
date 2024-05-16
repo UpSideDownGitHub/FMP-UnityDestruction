@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,74 @@ namespace UnityFracture
 {
     public static class Fracturer
     {
+
+
+
+        /// <summary>
+        /// Asynchronously generates the mesh fragments based on the provided options. The generated fragment objects are
+        /// stored as children of `fragmentParent`
+        /// </summary>
+        /// <param name="sourceObject">The source object.</param>
+        /// <param name="fractureTemplate">The fracture template.</param>
+        /// <param name="parent">The parent.</param>
+        /// <param name="fragmentCount">The fragment count.</param>
+        /// <param name="insideMat">The inside mat.</param>
+        public static IEnumerator FractureAsync(GameObject sourceObject,
+                                    GameObject fractureTemplate,
+                                    Transform parent,
+                                    int fragmentCount,
+                                    bool detectFloating,
+                                    Action onCompletion)
+        {
+            // Define our source mesh data for the fracturing
+            MeshData sourceMesh = new MeshData(sourceObject.GetComponent<MeshFilter>().sharedMesh);
+
+            // We begin by fragmenting the source mesh, then process each fragment in a FIFO queue
+            // until we achieve the target fragment count.
+            var fragments = new Queue<MeshData>();
+            fragments.Enqueue(sourceMesh);
+
+            // Subdivide the mesh into multiple fragments until we reach the fragment limit
+            MeshData topSlice, bottomSlice;
+            while (fragments.Count < fragmentCount)
+            {
+                MeshData meshData = fragments.Dequeue();
+                meshData.Calculatebounds();
+
+                // Select an arbitrary fracture plane normal
+                Vector3 normal = new Vector3(
+                    UnityEngine.Random.Range(-1f, 1f),
+                    UnityEngine.Random.Range(-1f, 1f),
+                    UnityEngine.Random.Range(-1f, 1f));
+
+                // slice the mesh along this normal
+                Slicer.Slice(meshData,
+                                 normal,
+                                 meshData.bounds.center,
+                                 out topSlice,
+                                 out bottomSlice);
+
+                // perform next slice on the next frame
+                yield return null;
+
+                fragments.Enqueue(topSlice);
+                fragments.Enqueue(bottomSlice);
+            }
+
+            // create all of the fragments
+            int i = 0;
+            foreach (MeshData meshData in fragments)
+            {
+                CreateFragement(meshData,
+                                sourceObject,
+                                fractureTemplate,
+                                parent,
+                                detectFloating,
+                                ref i);
+            }
+            onCompletion?.Invoke();
+        }
+
         /// <summary>
         /// Generates the mesh fragments based on the provided options. The generated fragment objects are
         /// stored as children of `fragmentParent`
