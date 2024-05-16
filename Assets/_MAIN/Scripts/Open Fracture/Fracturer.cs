@@ -35,7 +35,7 @@ namespace ReubenMiller.Fracture
         {
             // Define our source mesh data for the fracturing
             MeshData sourceMesh = new MeshData(sourceObject.GetComponent<MeshFilter>().sharedMesh);
-
+            yield return null;
             // We begin by fragmenting the source mesh, then process each fragment in a FIFO queue
             // until we achieve the target fragment count.
             var fragments = new Queue<MeshData>();
