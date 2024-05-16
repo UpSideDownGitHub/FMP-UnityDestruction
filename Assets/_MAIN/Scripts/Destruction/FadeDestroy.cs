@@ -9,7 +9,7 @@ namespace UnityFracture.Demo
     /// </summary>
     public class FadeDestroy : MonoBehaviour
     {
-        public float destroyTime = 2f;
+        public float destroyTime = 5f;
         private float _timeOfDestroy;
         private Vector3 _origScale;
         private float _startTime;

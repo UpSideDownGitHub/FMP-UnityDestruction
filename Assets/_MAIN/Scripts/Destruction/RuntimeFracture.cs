@@ -36,7 +36,7 @@ namespace UnityFracture.Demo
         /// <summary>
         /// Fracture the current obect
         /// </summary>
-        public void FractureThis()
+        public void FractureThis(float explosionForce, Vector3 explosionPosition, float explosionRadius)
         {
             // get the current mesh of this game object and if there is not mesh then return 
             // to fracture a mesh you need a mesh.
@@ -81,6 +81,7 @@ namespace UnityFracture.Demo
             for (int i = 0; i < childCount; i++)
             {
                 fragmentRoot.transform.GetChild(i).gameObject.AddComponent<FadeDestroy>();
+                fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, explosionPosition, explosionRadius);
             }
 
             // destroy the fragment template, as well as the current gameobject.

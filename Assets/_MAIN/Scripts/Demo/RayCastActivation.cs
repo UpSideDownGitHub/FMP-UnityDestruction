@@ -22,6 +22,10 @@ namespace UnityFracture
         public float maxDistance;
         public Camera cam;
 
+        [Header("Explosion Force")]
+        public float explosionForce;
+        public float explosionRadius;
+
         /// <summary>
         /// if cam has not been assigned will get the main camera in the scene
         /// </summary>
@@ -42,7 +46,7 @@ namespace UnityFracture
             // if the raycast hits and object then destroy it with "FractureThis"
             if (Physics.Raycast(ray, out hit, maxDistance, destructibleLayer))
             { 
-                hit.collider.gameObject.GetComponent<RuntimeFracture>().FractureThis();
+                hit.collider.gameObject.GetComponent<RuntimeFracture>().FractureThis(explosionForce, hit.point, explosionRadius);
                 if (spawnEffect)
                     Instantiate(effect, hit.point, Quaternion.identity);
             }
