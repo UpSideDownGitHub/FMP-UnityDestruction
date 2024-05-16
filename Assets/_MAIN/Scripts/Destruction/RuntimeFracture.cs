@@ -40,8 +40,11 @@ namespace UnityFracture.Demo
         /// <summary>
         /// Fracture the current obect
         /// </summary>
-        public void FractureThis(float explosionForce, Vector3 explosionPosition, float explosionRadius)
+        public void FractureThis(float explosionForce, Vector3 explosionPosition, float explosionRadius, int fragCount = 0)
         {
+            if (fragCount != 0)
+                fragmentCount = fragCount;
+
             // get the current mesh of this game object and if there is not mesh then return 
             // to fracture a mesh you need a mesh.
             var mesh = gameObject.GetComponent<MeshFilter>().sharedMesh;

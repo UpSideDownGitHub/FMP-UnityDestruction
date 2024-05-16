@@ -18,6 +18,8 @@ namespace UnityFracture
     {
         public LayerMask destructibleLayer;
 
+        public int fractureCount = 0;
+
         [Header("Ray Details")]
         public float maxDistance;
         public Camera cam;
@@ -46,7 +48,7 @@ namespace UnityFracture
             // if the raycast hits and object then destroy it with "FractureThis"
             if (Physics.Raycast(ray, out hit, maxDistance, destructibleLayer))
             { 
-                hit.collider.gameObject.GetComponent<RuntimeFracture>().FractureThis(explosionForce, hit.point, explosionRadius);
+                hit.collider.gameObject.GetComponent<RuntimeFracture>().FractureThis(explosionForce, hit.point, explosionRadius, fractureCount);
                 if (spawnEffect)
                     Instantiate(effect, hit.point, Quaternion.identity);
             }

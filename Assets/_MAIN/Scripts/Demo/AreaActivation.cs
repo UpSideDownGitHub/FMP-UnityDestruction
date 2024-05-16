@@ -15,6 +15,8 @@ namespace UnityFracture
         private bool _spawnEffect = false;
         private GameObject _effect;
 
+        public int fractureCount = 0;
+
         [Header("Explosion Force")]
         public float explosionForce;
         public float explosionRadius;
@@ -40,7 +42,7 @@ namespace UnityFracture
             // if the object is a destrutible then destroy is by calling "FractureThis"
             if (other.CompareTag(destructibleTag))
             {
-                other.gameObject.GetComponent<RuntimeFracture>().FractureThis(explosionForce, transform.position, explosionRadius);
+                other.gameObject.GetComponent<RuntimeFracture>().FractureThis(explosionForce, transform.position, explosionRadius, fractureCount);
                 if (_spawnEffect)
                     Instantiate(_effect, transform.position, Quaternion.identity);
                 Destroy(gameObject);

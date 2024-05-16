@@ -4,5 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/0 Pre-Fracture.unity
+    guid: d4b0da1ffefaf854ca4393936fbff4de
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/10 Pre-Fracture.unity
+    guid: 558bf1a9ec2a85d4893da7190c5b9e31
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/20 Pre-Fracture.unity
+    guid: a01a26a18fcc00b4ab6097f1ff71042a
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/30 Pre-Fracture.unity
+    guid: 52fc562dca3df1746adb2d79016bba63
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/40 Pre-Fracture.unity
+    guid: 1838ac5f4e98f4b4398536bf07229f58
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/50 Pre-Fracture.unity
+    guid: e3a81668c7060c24da90d95db2f109c8
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/60 Pre-Fracture.unity
+    guid: 80902182873f913428321c29dff593a9
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/70 Pre-Fracture.unity
+    guid: dfbc9993e6f906949aa75ab400df0c5c
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/80 Pre-Fracture.unity
+    guid: 75b7cfe14bc0956439ec492385089146
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/90 Pre-Fracture.unity
+    guid: b4618c13f382b2441b864fe0ed941701
+  - enabled: 1
+    path: Assets/_MAIN/Scenes/Demo/Test Scenes/100 Pre-Fracture.unity
+    guid: c84b4cbedc9ceab46954ec13e5cb97e7
   m_configObjects: {}

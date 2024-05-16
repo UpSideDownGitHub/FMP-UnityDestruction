@@ -61,6 +61,9 @@ namespace UnityFracture.Demo
         public void Start()
         {
             Cursor.lockState = CursorLockMode.Locked;
+            // Find the MainUIManger and set the base variables
+            var manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<MainUIManager>();
+            manager.rayCastActivation = rayCastActivation;
         }
 
         /// <summary>
@@ -89,6 +92,14 @@ namespace UnityFracture.Demo
         /// </summary>
         void Update()
         {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (Cursor.lockState == CursorLockMode.Locked)
+                    Cursor.lockState = CursorLockMode.None;
+                else
+                    Cursor.lockState = CursorLockMode.Locked;
+            }
+
             // get input
             var movementHor = Input.GetAxis("Horizontal");
             var movementDep = Input.GetAxis("Vertical");
@@ -117,6 +128,7 @@ namespace UnityFracture.Demo
                         GameObject bulletTemp = Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
                         bulletTemp.GetComponent<Rigidbody>().AddForce(bulletTemp.transform.forward * bulletFireForce);
                         bulletTemp.GetComponent<AreaActivation>().SetEffect(spawnEffect, effect);
+                        bulletTemp.GetComponent<AreaActivation>().fractureCount = rayCastActivation.fractureCount;
                         break;
                     case PlayerFireOption.RAYCAST:
                         rayCastActivation.FireRay(effect, spawnEffect);
