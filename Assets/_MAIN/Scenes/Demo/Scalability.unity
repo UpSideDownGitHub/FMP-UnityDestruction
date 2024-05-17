@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.33694, g: 325.04984, b: 430.2193, a: 1}
+  m_IndirectSpecularColor: {r: 688.9246, g: 540.7918, b: 408.89777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -184,6 +184,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &6094984
@@ -363,6 +366,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &14781664
@@ -716,6 +722,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &27278328
@@ -863,6 +872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1848963428}
   - {fileID: 1804261821}
@@ -974,6 +985,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &31844995
@@ -1149,6 +1163,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &34992899
@@ -1325,6 +1342,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &43061086
@@ -1503,6 +1523,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &45232722
@@ -1680,6 +1703,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &47223988
@@ -2207,6 +2233,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &53972677
@@ -2382,6 +2411,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &57975234
@@ -2556,6 +2588,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &66777165
@@ -2734,6 +2769,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &70503059
@@ -2912,6 +2950,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &70905868
@@ -3088,6 +3129,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &71774133
@@ -3262,6 +3306,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &81352481
@@ -3438,6 +3485,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &85272737
@@ -3614,6 +3664,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &88742588
@@ -3790,6 +3843,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &91040938
@@ -3967,6 +4023,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &92439529
@@ -4139,6 +4198,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &95396032
@@ -4318,6 +4380,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &96113800
@@ -4494,6 +4559,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &96639148
@@ -4641,6 +4709,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 377122777}
   - {fileID: 548778070}
@@ -4749,6 +4819,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &106514576
@@ -4925,6 +4998,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &112918217
@@ -5104,6 +5180,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &114890726
@@ -5278,6 +5357,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &133908379
@@ -5455,6 +5537,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &137882306
@@ -5634,6 +5719,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &138732189
@@ -5985,6 +6073,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &144001961
@@ -6162,6 +6253,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &148271392
@@ -6339,6 +6433,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &154041989
@@ -6515,6 +6612,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &157125809
@@ -6868,6 +6968,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &164391246
@@ -7043,6 +7146,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &166751857
@@ -7220,6 +7326,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &176453255
@@ -7398,6 +7507,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &186555733
@@ -7545,6 +7657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1718404867}
   - {fileID: 1704883877}
@@ -7658,6 +7772,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &191312692
@@ -7805,6 +7922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1928644142}
   - {fileID: 1085836209}
@@ -7916,6 +8035,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &198859008
@@ -8063,6 +8185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1124913480}
   - {fileID: 2130493831}
@@ -8176,6 +8300,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &205241260
@@ -8353,6 +8480,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &206563823
@@ -8530,6 +8660,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &219957552
@@ -8708,6 +8841,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &221518890
@@ -8886,6 +9022,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &221832852
@@ -9065,6 +9204,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &227751826
@@ -9244,6 +9386,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &228300200
@@ -9421,6 +9566,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &235338559
@@ -9597,6 +9745,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &240954948
@@ -9948,6 +10099,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &251192848
@@ -10124,6 +10278,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &251621974
@@ -10301,6 +10458,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &255542724
@@ -10479,6 +10639,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &255909880
@@ -10653,6 +10816,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &263113557
@@ -11002,6 +11168,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &271464553
@@ -11179,6 +11348,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &271689812
@@ -11357,6 +11529,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &272605531
@@ -11534,6 +11709,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &273990329
@@ -11710,6 +11888,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &277423954
@@ -12061,6 +12242,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &280084795
@@ -12236,6 +12420,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &282452061
@@ -12412,6 +12599,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &288350568
@@ -12588,6 +12778,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &292350609
@@ -12766,6 +12959,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &296625040
@@ -12943,6 +13139,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &298952879
@@ -13121,6 +13320,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &303462650
@@ -13470,6 +13672,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &306771948
@@ -13647,6 +13852,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &309489770
@@ -13826,6 +14034,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &310562891
@@ -14003,6 +14214,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &310619768
@@ -14181,6 +14395,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &314381700
@@ -14357,6 +14574,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &315386990
@@ -14534,6 +14754,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &315519061
@@ -14711,6 +14934,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &318797457
@@ -14885,6 +15111,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &319006109
@@ -15063,6 +15292,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &324632120
@@ -15210,6 +15442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1553832344}
   - {fileID: 1207521969}
@@ -15321,6 +15555,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &331303798
@@ -15498,6 +15735,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &337238767
@@ -15675,6 +15915,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &338031077
@@ -15822,6 +16065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 669386014}
   - {fileID: 272605529}
@@ -15933,6 +16178,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &342033988
@@ -16080,6 +16328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1127301367}
   - {fileID: 601714014}
@@ -16190,6 +16440,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &348716843
@@ -16366,6 +16619,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &349558193
@@ -16545,6 +16801,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &353671642
@@ -16895,6 +17154,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &356194740
@@ -17042,6 +17304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 964240304}
   - {fileID: 462656257}
@@ -17154,6 +17418,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &369885177
@@ -17331,6 +17598,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &376372110
@@ -17478,6 +17748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1248423786}
   - {fileID: 221832850}
@@ -17591,6 +17863,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &377122779
@@ -17768,6 +18043,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &377787546
@@ -17946,6 +18224,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &380471716
@@ -18122,6 +18403,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &381765188
@@ -18299,6 +18583,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &383932802
@@ -18477,6 +18764,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &387935732
@@ -18655,6 +18945,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &389845986
@@ -18834,6 +19127,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &392732026
@@ -19011,6 +19307,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &394296948
@@ -19186,6 +19485,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &395735557
@@ -19365,6 +19667,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &399796689
@@ -19543,6 +19848,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &404896421
@@ -19719,6 +20027,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &411462277
@@ -19896,6 +20207,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &416034164
@@ -20073,6 +20387,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &423251456
@@ -20248,6 +20565,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &423981438
@@ -20425,6 +20745,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &431529754
@@ -20602,6 +20925,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &432810024
@@ -20952,6 +21278,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &436444651
@@ -21129,6 +21458,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &437356032
@@ -21307,6 +21639,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &444302892
@@ -21660,6 +21995,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &448291986
@@ -21837,6 +22175,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &449907026
@@ -22190,6 +22531,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &457538085
@@ -22365,6 +22709,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &459036968
@@ -22542,6 +22889,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &461166564
@@ -22720,6 +23070,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &462656259
@@ -22897,6 +23250,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &462748136
@@ -23076,6 +23432,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &472569521
@@ -23428,6 +23787,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &488587664
@@ -23604,6 +23966,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &491819543
@@ -23778,6 +24143,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &501982337
@@ -23955,6 +24323,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &507551788
@@ -24130,6 +24501,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &511575019
@@ -24307,6 +24681,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &512762952
@@ -24485,6 +24862,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &513290707
@@ -24663,6 +25043,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &519633490
@@ -24842,6 +25225,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &520474514
@@ -25018,6 +25404,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &527500675
@@ -25190,6 +25579,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &530564913
@@ -25369,6 +25761,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &530607435
@@ -25548,6 +25943,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &530941374
@@ -25727,6 +26125,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &532933947
@@ -25905,6 +26306,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &533355796
@@ -26084,6 +26488,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &535093004
@@ -26260,6 +26667,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &535819840
@@ -26436,6 +26846,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &536332580
@@ -26614,6 +27027,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &537042197
@@ -26789,6 +27205,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &538114364
@@ -26968,6 +27387,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &545070017
@@ -27147,6 +27569,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &548778072
@@ -27323,6 +27748,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &549240758
@@ -27675,6 +28103,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &552659862
@@ -27851,6 +28282,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &553357755
@@ -28028,6 +28462,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &554734017
@@ -28205,6 +28642,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &556754651
@@ -28379,6 +28819,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &560322432
@@ -28557,6 +29000,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &561338839
@@ -28736,6 +29182,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &572209487
@@ -28913,6 +29362,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &580558564
@@ -29092,6 +29544,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &580938196
@@ -29269,6 +29724,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &589379601
@@ -29448,6 +29906,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &590232939
@@ -29595,6 +30056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 930356037}
   - {fileID: 1658216265}
@@ -29676,6 +30139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 399796687}
   - {fileID: 872784333}
@@ -29788,6 +30253,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &600959016
@@ -29962,6 +30430,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &600962520
@@ -30139,6 +30610,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &601714016
@@ -30316,6 +30790,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &613842231
@@ -30494,6 +30971,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &613994650
@@ -30847,6 +31327,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &626417517
@@ -31026,6 +31509,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &628111647
@@ -31203,6 +31689,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &629727844
@@ -31375,6 +31864,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &631435262
@@ -31553,6 +32045,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &631912396
@@ -31728,6 +32223,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &632385679
@@ -31907,6 +32405,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &635816428
@@ -32084,6 +32585,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &638653548
@@ -32260,6 +32764,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &669386016
@@ -32436,6 +32943,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &672131066
@@ -32614,6 +33124,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &675049350
@@ -32791,6 +33304,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &676323255
@@ -32969,6 +33485,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &679157773
@@ -33144,6 +33663,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &683757836
@@ -33323,6 +33845,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &687660906
@@ -33501,6 +34026,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &693763050
@@ -33680,6 +34208,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &717714044
@@ -33859,6 +34390,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &720858253
@@ -34006,6 +34540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1587355709}
   - {fileID: 273990327}
@@ -34116,6 +34652,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &728591237
@@ -34293,6 +34832,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &735507484
@@ -34469,6 +35011,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &736414437
@@ -34644,6 +35189,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &738604803
@@ -34820,6 +35368,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &744330306
@@ -34994,6 +35545,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &746123177
@@ -35171,6 +35725,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &748165486
@@ -35348,6 +35905,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &749092320
@@ -35495,6 +36055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 240954946}
   - {fileID: 296625038}
@@ -35606,6 +36168,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &753636644
@@ -35784,6 +36349,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &760281443
@@ -35931,6 +36499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 27278326}
   - {fileID: 491819541}
@@ -36041,6 +36611,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &762916598
@@ -36213,6 +36786,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &767557638
@@ -36389,6 +36965,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &770509412
@@ -36566,6 +37145,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &773734564
@@ -36743,6 +37325,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &774248227
@@ -36920,6 +37505,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &780427020
@@ -37095,6 +37683,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &788142546
@@ -37448,6 +38039,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &788188699
@@ -37626,6 +38220,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &790649350
@@ -37803,6 +38400,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &793222873
@@ -37982,6 +38582,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &793838819
@@ -38336,6 +38939,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &798855919
@@ -38510,6 +39116,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &799690958
@@ -38687,6 +39296,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &804797276
@@ -38864,6 +39476,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &812027714
@@ -39038,6 +39653,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &813241759
@@ -39214,6 +39832,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &813418966
@@ -39392,6 +40013,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &826729272
@@ -39564,6 +40188,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &830785158
@@ -39740,6 +40367,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &841278203
@@ -39917,6 +40547,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &842862721
@@ -40064,6 +40697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 91040936}
   - {fileID: 45232720}
@@ -40177,6 +40812,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &846358855
@@ -40355,6 +40993,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &847226819
@@ -40502,6 +41143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1684911331}
   - {fileID: 251621972}
@@ -40789,6 +41432,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &850397731
@@ -40967,6 +41613,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &853048881
@@ -41316,6 +41965,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &860718827
@@ -41493,6 +42145,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &860815314
@@ -41670,6 +42325,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &866732015
@@ -41847,6 +42505,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &867631476
@@ -42026,6 +42687,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &871134153
@@ -42203,6 +42867,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &871952296
@@ -42380,6 +43047,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &872784335
@@ -42558,6 +43228,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &885714624
@@ -42912,6 +43585,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &891084641
@@ -43090,6 +43766,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &893395178
@@ -43267,6 +43946,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &894800461
@@ -43446,6 +44128,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &905129258
@@ -43593,6 +44278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 556754649}
   - {fileID: 227751824}
@@ -43701,6 +44388,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &908688561
@@ -43879,6 +44569,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &915936870
@@ -44056,6 +44749,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &922057307
@@ -44234,6 +44930,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &926801085
@@ -44413,6 +45112,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &927091946
@@ -44590,6 +45292,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &928939240
@@ -44768,6 +45473,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &930356039
@@ -44945,6 +45653,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &934845512
@@ -45123,6 +45834,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &934971396
@@ -45299,6 +46013,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &938951143
@@ -45474,6 +46191,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &943033576
@@ -45653,6 +46373,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &944312884
@@ -45832,6 +46555,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &948527710
@@ -46006,6 +46732,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &952280208
@@ -46183,6 +46912,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &953799349
@@ -46360,6 +47092,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &956337772
@@ -46539,6 +47274,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &957566017
@@ -46716,6 +47454,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &959557423
@@ -46892,6 +47633,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &964240306
@@ -47214,6 +47958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 891084639}
   - {fileID: 1441594351}
@@ -47326,6 +48072,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &971427975
@@ -47502,6 +48251,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &974970687
@@ -47649,6 +48401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 535819838}
   - {fileID: 926801083}
@@ -47732,6 +48486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 561338837}
   - {fileID: 280084793}
@@ -47843,6 +48599,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &983905701
@@ -48021,6 +48780,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &995558620
@@ -48198,6 +48960,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &995659364
@@ -48374,6 +49139,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &995997010
@@ -48549,6 +49317,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1002234578
@@ -48727,6 +49498,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1003553971
@@ -48901,6 +49675,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1010075908
@@ -49077,6 +49854,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1018099844
@@ -49224,6 +50004,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1945040284}
   - {fileID: 2004683877}
@@ -49333,6 +50115,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1030010678
@@ -49510,6 +50295,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1035866504
@@ -49685,6 +50473,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1040829061
@@ -49862,6 +50653,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1042954389
@@ -50039,6 +50833,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1050482209
@@ -50218,6 +51015,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1051277891
@@ -50392,6 +51192,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1053260630
@@ -50569,6 +51372,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1057437910
@@ -50746,6 +51552,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1063694293
@@ -51098,6 +51907,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1070877162
@@ -51275,6 +52087,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1077043744
@@ -51447,6 +52262,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1078240528
@@ -51624,6 +52442,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1078996927
@@ -51771,6 +52592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1314897476}
   - {fileID: 632385677}
@@ -51882,6 +52705,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1085836211
@@ -52054,6 +52880,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1094840380
@@ -52407,6 +53236,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1107132533
@@ -52584,6 +53416,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1107816459
@@ -52761,6 +53596,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1114435394
@@ -52937,6 +53775,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1115933333
@@ -53115,6 +53956,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1116710545
@@ -53293,6 +54137,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1119727392
@@ -53470,6 +54317,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1121573742
@@ -53646,6 +54496,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1124913482
@@ -53823,6 +54676,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1126138492
@@ -53970,6 +54826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1119727390}
   - {fileID: 166751855}
@@ -54083,6 +54941,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1127301369
@@ -54260,6 +55121,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1128061513
@@ -54436,6 +55300,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1134597828
@@ -54613,6 +55480,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1137000727
@@ -54791,6 +55661,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1148372219
@@ -54970,6 +55843,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1153710779
@@ -55146,6 +56022,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1155478095
@@ -55323,6 +56202,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1157604719
@@ -55470,6 +56352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1614369309}
   - {fileID: 114890724}
@@ -55582,6 +56466,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1159876930
@@ -55758,6 +56645,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1164013285
@@ -55905,6 +56795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1723027082}
   - {fileID: 2102214531}
@@ -56017,6 +56909,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1167108132
@@ -56193,6 +57088,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1171326829
@@ -56371,6 +57269,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1177168162
@@ -56547,6 +57448,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1189668436
@@ -56723,6 +57627,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1194203149
@@ -56870,6 +57777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 43061084}
   - {fileID: 1198244171}
@@ -56983,6 +57892,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1197046719
@@ -57161,6 +58073,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1198244173
@@ -57442,6 +58357,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1202521966
@@ -57589,6 +58507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 381765186}
   - {fileID: 2014029037}
@@ -57672,6 +58592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1320109635}
   - {fileID: 436444649}
@@ -57783,6 +58705,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1207521971
@@ -57960,6 +58885,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1210566388
@@ -58312,6 +59240,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1224525118
@@ -58489,6 +59420,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1225324818
@@ -58841,6 +59775,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1231639961
@@ -59018,6 +59955,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1239257777
@@ -59193,6 +60133,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1241473288
@@ -59369,6 +60312,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1248423788
@@ -59545,6 +60491,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1253690606
@@ -59723,6 +60672,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1254632371
@@ -59870,6 +60822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1197046717}
   - {fileID: 1770644430}
@@ -60126,6 +61080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 70905866}
   - {fileID: 277423952}
@@ -60238,6 +61194,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1260451391
@@ -60415,6 +61374,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1261614334
@@ -60767,6 +61729,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1269738875
@@ -60944,6 +61909,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1275113431
@@ -61121,6 +62089,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1275359219
@@ -61473,6 +62444,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1279011981
@@ -61651,6 +62625,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1279390115
@@ -61828,6 +62805,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1283832651
@@ -61958,6 +62938,7 @@ GameObject:
   - component: {fileID: 1284663726}
   - component: {fileID: 1284663729}
   - component: {fileID: 1284663730}
+  - component: {fileID: 1284663731}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -62182,8 +63163,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2844094435825769845, guid: 3ff7d7f5918e0c8488fb14aaeb1f5ffc, type: 3}
   bulletSpeed: 50
-  spawnEffect: 1
+  fireRate: 0.2
+  spawnEffect: 0
   effect: {fileID: 858662849300924067, guid: 72a5e1028a58b7c47ac6ef26199004b3, type: 3}
+  rayCastActivation: {fileID: 1284663731}
+--- !u!114 &1284663731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284663725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad1c01b1cc94fc46951569097330975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructibleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  fractureCount: 20
+  maxDistance: 1000
+  cam: {fileID: 1284663727}
+  explosionForce: 100
+  explosionRadius: 250
 --- !u!1 &1285502330
 GameObject:
   m_ObjectHideFlags: 0
@@ -62245,6 +63248,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1285502333
@@ -62594,6 +63600,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1290174163
@@ -62771,6 +63780,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1290322461
@@ -62948,6 +63960,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1296114460
@@ -63126,6 +64141,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1299084477
@@ -63273,6 +64291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1538940328}
   - {fileID: 1411721344}
@@ -63599,6 +64619,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1314195251
@@ -63775,6 +64798,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1314583724
@@ -63953,6 +64979,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1314897478
@@ -64131,6 +65160,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1316449929
@@ -64307,6 +65339,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1319238648
@@ -64485,6 +65520,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1320109637
@@ -64662,6 +65700,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1329472614
@@ -65013,6 +66054,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1338669610
@@ -65192,6 +66236,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1345806744
@@ -65371,6 +66418,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1349396532
@@ -65547,6 +66597,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1349921409
@@ -65694,6 +66747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 793838817}
   - {fileID: 1657248336}
@@ -65980,6 +67035,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1356301098
@@ -66156,6 +67214,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1360010178
@@ -66334,6 +67395,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1360844242
@@ -66508,6 +67572,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1362284042
@@ -66655,6 +67722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 310562889}
   - {fileID: 1283832649}
@@ -66766,6 +67835,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1374806714
@@ -66913,6 +67985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 2092647186}
   - {fileID: 537042195}
@@ -67028,6 +68102,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1381154239
@@ -67206,6 +68283,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1385708830
@@ -67382,6 +68462,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1386691726
@@ -67556,6 +68639,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1391061830
@@ -67733,6 +68819,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1398473768
@@ -67911,6 +69000,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1405501127
@@ -68087,6 +69179,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1408731427
@@ -68264,6 +69359,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1411721346
@@ -68614,6 +69712,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1413983488
@@ -68791,6 +69892,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1416042168
@@ -68968,6 +70072,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1427093838
@@ -69146,6 +70253,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1428978348
@@ -69499,6 +70609,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1434138769
@@ -69848,6 +70961,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1435290124
@@ -70027,6 +71143,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1438001482
@@ -70204,6 +71323,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1441594353
@@ -70378,6 +71500,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1443179098
@@ -70555,6 +71680,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1445527272
@@ -70732,6 +71860,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1451057390
@@ -70910,6 +72041,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1452742383
@@ -71086,6 +72220,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1457390324
@@ -71506,6 +72643,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1469228762
@@ -71684,6 +72824,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1471133670
@@ -71858,6 +73001,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1473798176
@@ -72036,6 +73182,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1475230926
@@ -72212,6 +73361,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1475573337
@@ -72389,6 +73541,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1483430633
@@ -72743,6 +73898,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1490675746
@@ -72917,6 +74075,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1495440729
@@ -73268,6 +74429,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1498145725
@@ -73445,6 +74609,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1498942921
@@ -73624,6 +74791,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1501053868
@@ -73799,6 +74969,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1504095104
@@ -73977,6 +75150,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1506354198
@@ -74153,6 +75329,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1509213608
@@ -74332,6 +75511,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1511832397
@@ -74510,6 +75692,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1518063568
@@ -74863,6 +76048,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1521667374
@@ -75010,6 +76198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 389845984}
   - {fileID: 1542305040}
@@ -75122,6 +76312,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1523350388
@@ -75297,6 +76490,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1524849778
@@ -75471,6 +76667,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1526218442
@@ -75648,6 +76847,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1532813165
@@ -75825,6 +77027,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1535862189
@@ -76004,6 +77209,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1536458449
@@ -76183,6 +77391,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1538940330
@@ -76358,6 +77569,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1539596348
@@ -76536,6 +77750,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1540211784
@@ -76713,6 +77930,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1540334666
@@ -76889,6 +78109,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1542305042
@@ -77066,6 +78289,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1543724243
@@ -77245,6 +78471,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1550186183
@@ -77424,6 +78653,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1553832346
@@ -77776,6 +79008,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1575568283
@@ -77953,6 +79188,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1575809015
@@ -78132,6 +79370,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1587355711
@@ -78306,6 +79547,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1588154809
@@ -78485,6 +79729,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1588165662
@@ -78662,6 +79909,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1593708176
@@ -78836,6 +80086,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1607325448
@@ -79013,6 +80266,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1612810204
@@ -79187,6 +80443,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1613065478
@@ -79361,6 +80620,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1613928320
@@ -79538,6 +80800,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1614369311
@@ -79717,6 +80982,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1621645550
@@ -79896,6 +81164,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1622009766
@@ -80074,6 +81345,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1625722251
@@ -80252,6 +81526,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1626313622
@@ -80399,6 +81676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 303462648}
   - {fileID: 1836686199}
@@ -80511,6 +81790,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1627495619
@@ -80864,6 +82146,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1634023871
@@ -81039,6 +82324,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1650831212
@@ -81214,6 +82502,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1655026479
@@ -81388,6 +82679,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1655349976
@@ -81566,6 +82860,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1655866080
@@ -81743,6 +83040,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1657248338
@@ -81921,6 +83221,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1657997001
@@ -82097,6 +83400,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1658216267
@@ -82273,6 +83579,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1658721119
@@ -82627,6 +83936,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1667368382
@@ -82774,6 +84086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 535093002}
   - {fileID: 437356030}
@@ -82887,6 +84201,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1678952925
@@ -83065,6 +84382,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1684911333
@@ -83243,6 +84563,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1695691806
@@ -83421,6 +84744,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1699091303
@@ -83600,6 +84926,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1704883879
@@ -83774,6 +85103,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1706869624
@@ -84126,6 +85458,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1718404869
@@ -84273,6 +85608,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1408731425}
   - {fileID: 324632118}
@@ -84388,6 +85725,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1723027084
@@ -84742,6 +86082,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1736196498
@@ -84921,6 +86264,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1745718675
@@ -85068,6 +86414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1416042166}
   - {fileID: 1667368380}
@@ -85179,6 +86527,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1752619660
@@ -85356,6 +86707,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1753948831
@@ -85532,6 +86886,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1755851253
@@ -85708,6 +87065,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1770321345
@@ -85882,6 +87242,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1770416189
@@ -86061,6 +87424,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1770644432
@@ -86236,6 +87602,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1772300497
@@ -86414,6 +87783,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1774241473
@@ -86586,6 +87958,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1780723088
@@ -86758,6 +88133,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1785344045
@@ -86936,6 +88314,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1791448118
@@ -87288,6 +88669,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1797526007
@@ -87435,6 +88819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 790649348}
   - {fileID: 1655026477}
@@ -87547,6 +88933,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1802852881
@@ -87725,6 +89114,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1803291810
@@ -87902,6 +89294,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1804261823
@@ -88078,6 +89473,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1810723518
@@ -88254,6 +89652,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1812237301
@@ -88432,6 +89833,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1813650372
@@ -88611,6 +90015,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1815044070
@@ -88788,6 +90195,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1817871592
@@ -88966,6 +90376,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1820037011
@@ -89144,6 +90557,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1825986926
@@ -89320,6 +90736,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1827459021
@@ -89499,6 +90918,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1830921782
@@ -89671,6 +91093,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1833432725
@@ -89847,6 +91272,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1836686201
@@ -90024,6 +91452,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1837841541
@@ -90200,6 +91631,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1838086313
@@ -90347,6 +91781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1977079983}
   - {fileID: 1356301096}
@@ -90460,6 +91896,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1848963430
@@ -90638,6 +92077,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1858015316
@@ -90816,6 +92258,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1870603154
@@ -90993,6 +92438,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1879516485
@@ -91168,6 +92616,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1881518292
@@ -91347,6 +92798,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1883900669
@@ -91526,6 +92980,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1902930185
@@ -91705,6 +93162,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1907020855
@@ -91884,6 +93344,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1909366451
@@ -92061,6 +93524,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1909375445
@@ -92238,6 +93704,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1914970318
@@ -92385,6 +93854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1820037009}
   - {fileID: 411462275}
@@ -92495,6 +93966,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1916643854
@@ -92672,6 +94146,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1917089168
@@ -92847,6 +94324,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1917935664
@@ -93199,6 +94679,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1927541185
@@ -93378,6 +94861,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1927582518
@@ -93554,6 +95040,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1927987359
@@ -93733,6 +95222,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1928644144
@@ -93912,6 +95404,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1929994968
@@ -94087,6 +95582,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1930246969
@@ -94261,6 +95759,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1933100428
@@ -94438,6 +95939,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1933421345
@@ -94614,6 +96118,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1935223403
@@ -94792,6 +96299,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1938980870
@@ -94969,6 +96479,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1940097584
@@ -95145,6 +96658,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1942713897
@@ -95323,6 +96839,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1945040286
@@ -95500,6 +97019,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1961663751
@@ -95677,6 +97199,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1964127677
@@ -95852,6 +97377,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1964491036
@@ -96029,6 +97557,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1967999171
@@ -96206,6 +97737,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1971684787
@@ -96384,6 +97918,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1971802850
@@ -96531,6 +98068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 6094982}
   - {fileID: 1241473286}
@@ -96644,6 +98183,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1977079985
@@ -96821,6 +98363,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1979368661
@@ -96998,6 +98543,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1987080631
@@ -97145,6 +98693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1475230924}
   - {fileID: 2049251791}
@@ -97258,6 +98808,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1990441120
@@ -97435,6 +98988,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1998782235
@@ -97610,6 +99166,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &1998936674
@@ -97787,6 +99346,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2002542260
@@ -97965,6 +99527,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2004663633
@@ -98140,6 +99705,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2004683879
@@ -98316,6 +99884,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2009091344
@@ -98494,6 +100065,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2014029039
@@ -98669,6 +100243,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2019209132
@@ -98845,6 +100422,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2024221453
@@ -99024,6 +100604,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2026699322
@@ -99203,6 +100786,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2028150248
@@ -99377,6 +100963,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2031926816
@@ -99554,6 +101143,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2032867940
@@ -99728,6 +101320,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2033161630
@@ -99906,6 +101501,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2033173323
@@ -100053,6 +101651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1523350386}
   - {fileID: 1772300495}
@@ -100163,6 +101763,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2042214855
@@ -100339,6 +101942,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2044923075
@@ -100517,6 +102123,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2046735755
@@ -100692,6 +102301,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2049251793
@@ -100868,6 +102480,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2062494795
@@ -101047,6 +102662,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2062574944
@@ -101226,6 +102844,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2065435767
@@ -101403,6 +103024,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2065841450
@@ -101756,6 +103380,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2067107816
@@ -102078,6 +103705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 255909878}
   - {fileID: 349558191}
@@ -102189,6 +103818,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2071746317
@@ -102336,6 +103968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1316449927}
   - {fileID: 2077681913}
@@ -102448,6 +104082,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2073303379
@@ -102626,6 +104263,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2077042308
@@ -102802,6 +104442,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2077681915
@@ -102949,6 +104592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1791448116}
   - {fileID: 395735555}
@@ -103060,6 +104705,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2081827960
@@ -103236,6 +104884,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2083142251
@@ -103383,6 +105034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 198859006}
   - {fileID: 1815044068}
@@ -103494,6 +105147,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2091324801
@@ -103670,6 +105326,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2092647188
@@ -103845,6 +105504,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2093733234
@@ -104021,6 +105683,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2097412225
@@ -104200,6 +105865,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2101633966
@@ -104377,6 +106045,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2102214533
@@ -104549,6 +106220,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2105857123
@@ -104696,6 +106370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 944312882}
   - {fileID: 793222871}
@@ -104807,6 +106483,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2112218900
@@ -105161,6 +106840,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2117408290
@@ -105336,6 +107018,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2121226968
@@ -105510,6 +107195,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2121720767
@@ -105864,6 +107552,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2125665767
@@ -106041,6 +107732,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2128100719
@@ -106217,6 +107911,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2129984094
@@ -106395,6 +108092,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2130493833
@@ -106574,6 +108274,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2131309260
@@ -106721,6 +108424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e40243c5baa92d4d8047c0e33fe2179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FractureThreshold: 1
+  forcePerConnection: 1
   children:
   - {fileID: 1536458447}
   - {fileID: 1998782233}
@@ -106832,6 +108537,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2133197460
@@ -107008,6 +108716,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2134327576
@@ -107360,6 +109071,9 @@ MonoBehaviour:
   insideMat: {fileID: 2100000, guid: 3be9231021208864199d8bab6423be59, type: 2}
   floatingDetection: 0
   copyMaterials: 0
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2136839839
@@ -107536,6 +109250,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2146375403
@@ -107710,6 +109427,9 @@ MonoBehaviour:
   insideMat: {fileID: 0}
   floatingDetection: 0
   copyMaterials: 1
+  asyncFracture: 0
+  asyncFloating: 0
+  asyncStress: 0
   spawnEffect: 0
   effect: {fileID: 0}
 --- !u!54 &2146864670

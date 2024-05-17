@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5982353534597224531}
   - component: {fileID: 763929462466157087}
   - component: {fileID: 6271236106648768113}
-  - component: {fileID: 8986821595614465145}
   - component: {fileID: 3017277682255628481}
+  - component: {fileID: -8233853971085063176}
   m_Layer: 0
   m_Name: Asterroid
   m_TagString: Projectile
@@ -135,21 +135,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8986821595614465145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2844094435825769845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c901016eba790947a568cb687c33d26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destructibleTag: Destructible
-  explosionForce: 100
-  explosionRadius: 250
 --- !u!114 &3017277682255628481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,3 +148,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 5
+--- !u!114 &-8233853971085063176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2844094435825769845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4519775b88f8d4baa4207a92b4a578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnEffect: 1
+  effect: {fileID: 858662849300924067, guid: 72a5e1028a58b7c47ac6ef26199004b3, type: 3}

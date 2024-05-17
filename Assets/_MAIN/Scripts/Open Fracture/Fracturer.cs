@@ -73,6 +73,7 @@ namespace ReubenMiller.Fracture
             List<Mesh> meshes = new();
             foreach (MeshData meshData in fragments)
             {
+                yield return null; // DELETE ME
                 meshes.Add(meshData.ToMesh());
             }
             var colliderMeshes = CreateCollidersFast(meshes.ToArray());
@@ -219,6 +220,8 @@ namespace ReubenMiller.Fracture
                 var size = meshes[k].bounds.size;
                 float density = (parentSize.x * parentSize.y * parentSize.z) / parentMass;
                 rigidBody.mass = (size.x * size.y * size.z) / density;
+
+                fragment.SetActive(false);
 
                 i++;
             }

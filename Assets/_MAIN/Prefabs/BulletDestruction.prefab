@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5982353534597224531}
   - component: {fileID: -6659367597212584229}
   - component: {fileID: 6271236106648768113}
-  - component: {fileID: 8986821595614465145}
   - component: {fileID: 3017277682255628481}
+  - component: {fileID: -2906074240771789958}
   m_Layer: 0
   m_Name: BulletDestruction
   m_TagString: Projectile
@@ -44,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2844094435825769845}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &5982353534597224531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -135,21 +135,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8986821595614465145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2844094435825769845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c901016eba790947a568cb687c33d26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destructibleTag: Destructible
-  explosionForce: 25
-  explosionRadius: 10
 --- !u!114 &3017277682255628481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,4 +147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c9e0cf9334ca941bc5d62d1ea127e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 5
+  destroyTime: 10
+--- !u!114 &-2906074240771789958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2844094435825769845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4519775b88f8d4baa4207a92b4a578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnEffect: 0
+  effect: {fileID: 0}

@@ -12,18 +12,36 @@ namespace ReubenMiller.Fracture.Demo
         [Header("Bullet")]
         public GameObject bulletPrefab; 
         public float bulletSpeed = 10.0f;
+        public float fireRate;
+        private float _timeOfNextFire = 0;
 
         [Header("Effect Spawning")]
         public bool spawnEffect;
         public GameObject effect;
+
+        public RayCastActivation rayCastActivation;
+
+        /// <summary>
+        /// initilse the manager to have this raycast activation (can control fragment counts)
+        /// </summary>
+        public void Start()
+        {
+            Cursor.lockState = CursorLockMode.None;
+            var manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<MainUIManager>();
+            manager.rayCastActivation = rayCastActivation;
+            rayCastActivation.fractureCount = manager.fragmentCounts[manager.currentFragCount];
+        }
 
         /// <summary>
         /// detechts when the player tries to shoot
         /// </summary>
         void Update()
         {
-            if (Input.GetMouseButtonDown(0)) 
+            if (Input.GetMouseButtonDown(0) && Time.time > _timeOfNextFire)
+            {
+                _timeOfNextFire = Time.time + fireRate;
                 FireTowardsClick();
+            }
         }
 
         /// <summary>
@@ -34,19 +52,11 @@ namespace ReubenMiller.Fracture.Demo
             // create a ray in the direction of the click
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
 
-            // Check for collision with world objects
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                // Spawn Particle
-            }
+            GameObject bulletTemp = Instantiate(bulletPrefab, ray.GetPoint(0), Quaternion.identity);
+            bulletTemp.GetComponent<Rigidbody>().velocity = ray.direction.normalized * bulletSpeed;
 
-            // Spawn the bullet at camera position
-            GameObject bulletTemp = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-
-            // Move the bullet in the rays direction & set effect
-            bulletTemp.GetComponent<Rigidbody>().velocity = (ray.direction).normalized * bulletSpeed;
-            bulletTemp.GetComponent<AreaActivation>().SetEffect(spawnEffect, effect);
+            // Fire a ray to start fracuring the object
+            rayCastActivation.FireRay(effect, spawnEffect, ray);
 
         }
     }

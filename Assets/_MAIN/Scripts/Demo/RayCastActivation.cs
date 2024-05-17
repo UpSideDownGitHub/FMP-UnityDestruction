@@ -53,5 +53,20 @@ namespace ReubenMiller.Fracture
                     Instantiate(effect, hit.point, Quaternion.identity);
             }
         }
+
+        /// <summary>
+        /// using the given ray track the collisions
+        /// </summary>
+        public void FireRay(GameObject effect, bool spawnEffect, Ray ray)
+        {
+            RaycastHit hit;
+            // if the raycast hits and object then destroy it with "FractureThis"
+            if (Physics.Raycast(ray, out hit, maxDistance, destructibleLayer))
+            {
+                hit.collider.gameObject.GetComponent<RuntimeFracture>().FractureThis(explosionForce, hit.point, explosionRadius, fractureCount);
+                if (spawnEffect)
+                    Instantiate(effect, hit.point, Quaternion.identity);
+            }
+        }
     }
 }

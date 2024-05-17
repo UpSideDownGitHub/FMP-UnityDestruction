@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using JetBrains.Annotations;
 
 namespace ReubenMiller.Fracture.Demo
 {
@@ -27,6 +28,7 @@ namespace ReubenMiller.Fracture.Demo
         [Header("Fragment Counts")]
         public TMP_Dropdown fragmentCountDropdown;
         public int[] fragmentCounts;
+        public int currentFragCount = 0;
         public RayCastActivation rayCastActivation;
 
         [Header("Scenes")]
@@ -41,6 +43,7 @@ namespace ReubenMiller.Fracture.Demo
 
         public void DropDownChanged(int val)
         {
+            currentFragCount = val;
             rayCastActivation.fractureCount = fragmentCounts[val];
         }
 

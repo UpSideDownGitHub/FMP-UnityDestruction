@@ -26,7 +26,19 @@ namespace ReubenMiller.Fracture
         public bool spawnEffect;
         public GameObject effect;
 
+        [Header("Explosion Options (Sent)")]
+        float explosionForce;
+        Vector3 explosionPosition;
+        float explosionRadius;
+        int fragCount = 0;
+        GameObject fragmentTemplate;
+
         private GameObject fragmentRoot;
+
+        // prerunning the fracture
+        private bool _fractureStarted = false; // if the fracture has been started (raycast hit)
+        private bool _fractureFinished = false; // if the fracture has been completed
+        private bool _fractureEnd = false; // if the fracture should end it itself (already collided)
 
         /// <summary>
         /// Spawns the effect if spawnEffect is true
@@ -37,11 +49,33 @@ namespace ReubenMiller.Fracture
                 Instantiate(effect, transform.position, Quaternion.identity);
         }
 
+        public void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Projectile") && _fractureStarted)
+            {
+                // if fracture started and the fracture has finished
+                if (_fractureFinished)
+                {
+                    PropogateStress();
+                }
+                else
+                    _fractureEnd = true;
+            }
+
+            Destroy(other.gameObject);
+        }
+
         /// <summary>
         /// Fracture the current obect
         /// </summary>
-        public void FractureThis(float explosionForce, Vector3 explosionPosition, float explosionRadius, int fragCount = 0)
+        public void FractureThis(float exploForce, Vector3 exploPosition, float exploRadius, int Count = 0)
         {
+            _fractureStarted = true;
+            explosionForce = exploForce;
+            explosionPosition = exploPosition;
+            explosionRadius = exploRadius;
+            fragmentCount = Count;
+
             if (fragCount != 0)
                 fragmentCount = fragCount;
 
@@ -60,7 +94,7 @@ namespace ReubenMiller.Fracture
 
             // create the template for the fragments, this will take on all of the components
             // of the current object to make it match (Mesh, Rigidbody, Collider)
-            GameObject fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat, copyMaterials, false);
+            fragmentTemplate = Fracturer.CreateTemplate(gameObject, insideMat, copyMaterials, false);
 
 
             if (asyncFracture)
@@ -73,7 +107,13 @@ namespace ReubenMiller.Fracture
                     floatingDetection,
                     () =>
                     {
-                        PropogateStress(explosionForce, explosionPosition, explosionRadius, fragmentTemplate);
+                        // if the bullet has already collied then start the stress prop if not then set to finished
+                        if (_fractureEnd)
+                            PropogateStress();
+                        else
+                            _fractureFinished = true;
+                        // destroy the template that was used
+                        Destroy(fragmentTemplate);
                     }
                 ));
             }
@@ -87,7 +127,13 @@ namespace ReubenMiller.Fracture
                     fragmentCount,
                     floatingDetection);
 
-                PropogateStress(explosionForce, explosionPosition, explosionRadius, fragmentTemplate);
+                // if the bullet has already collied then start the stress prop if not then set to finished
+                if (_fractureEnd)
+                    PropogateStress();
+                else
+                    _fractureFinished = true;
+                // destroy the template that was used
+                Destroy(fragmentTemplate);
             }
         }
 
@@ -103,12 +149,14 @@ namespace ReubenMiller.Fracture
         /// to ensure the order is correct, Action callbacks are used within the async functions to make them
         /// call the correct thing when they finish executing.
         /// </summary>
-        /// <param name="explosionForce">The explosion force.</param>
-        /// <param name="explosionPosition">The explosion position.</param>
-        /// <param name="explosionRadius">The explosion radius.</param>
-        /// <param name="fragmentTemplate">The fragment template.</param>
-        public void PropogateStress(float explosionForce, Vector3 explosionPosition, float explosionRadius, GameObject fragmentTemplate)
+        public void PropogateStress()
         {
+            // enable the children
+            int childCount = fragmentRoot.transform.childCount;
+            for (int i = 0; i < childCount; i++)
+            {
+                fragmentRoot.transform.GetChild(i).gameObject.SetActive(true);
+            }
             try
             {
                 gameObject.GetComponent<Connections>().ObjectDestroyed();
@@ -121,13 +169,13 @@ namespace ReubenMiller.Fracture
                             {
                                 StartCoroutine(gameObject.GetComponentInParent<StressPropogation>().PartDestroyedAsync(() =>
                                 {
-                                    EndFracture(explosionForce, explosionPosition, explosionRadius, fragmentTemplate);
+                                    EndFracture();
                                 }));
                             }
                             else
                             {
                                 gameObject.GetComponentInParent<StressPropogation>().PartDestroyed();
-                                EndFracture(explosionForce, explosionPosition, explosionRadius, fragmentTemplate);
+                                EndFracture();
                             }
 
 
@@ -141,27 +189,27 @@ namespace ReubenMiller.Fracture
                     {
                         StartCoroutine(gameObject.GetComponentInParent<StressPropogation>().PartDestroyedAsync(() =>
                         {
-                            EndFracture(explosionForce, explosionPosition, explosionRadius, fragmentTemplate);
+                            EndFracture();
                         }));
                     }
                     else
                     {
                         gameObject.GetComponentInParent<StressPropogation>().PartDestroyed();
-                        EndFracture(explosionForce, explosionPosition, explosionRadius, fragmentTemplate);
+                        EndFracture();
                     }
                 }
             }
-            catch (Exception e) { Debug.LogException(e); }
+            catch (Exception e) 
+            { 
+                Debug.LogException(e);
+                EndFracture();
+            }
         }
 
         /// <summary>
         /// Ends the fracture by setting the children and destroying the object
         /// </summary>
-        /// <param name="explosionForce">The explosion force.</param>
-        /// <param name="explosionPosition">The explosion position.</param>
-        /// <param name="explosionRadius">The explosion radius.</param>
-        /// <param name="fragmentTemplate">The fragment template.</param>
-        public void EndFracture(float explosionForce, Vector3 explosionPosition, float explosionRadius, GameObject fragmentTemplate)
+        public void EndFracture()
         {
             // set the destroy times on all of the child objects, so the fragments dont stay
             // around forever
@@ -172,8 +220,7 @@ namespace ReubenMiller.Fracture
                 fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, explosionPosition, explosionRadius);
             }
 
-            // destroy the fragment template, as well as the current gameobject.
-            Destroy(fragmentTemplate);
+            // destroy the current gameobject.
             Destroy(gameObject);
         }
     }

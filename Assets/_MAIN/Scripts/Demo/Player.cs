@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,15 +7,6 @@ using UnityEngine;
 
 namespace ReubenMiller.Fracture.Demo
 {
-    /// <summary>
-    /// the two shooting options for the player
-    /// </summary>
-    public enum PlayerFireOption
-    {
-        BULLETAREA,
-        RAYCAST
-    }
-
     /// <summary>
     /// player will allow for movement, as well as shooting, using 2 moves, raycast and area with bullets
     /// </summary>
@@ -27,15 +19,16 @@ namespace ReubenMiller.Fracture.Demo
         public Rigidbody rb;
         public float movementForce;
         public float maxVelocity;
-        
+
         [Header("Jumping")]
         public float jumpForce;
         public float groundDistance;
         public string groundTag;
         public bool grounded = true;
-        
+
         [Header("Camera")]
         public GameObject cam;
+        public CinemachineVirtualCamera cinemachineVCam;
 
         [Header("Effect Spawning")]
         public bool spawnEffect;
@@ -43,7 +36,6 @@ namespace ReubenMiller.Fracture.Demo
 
         [Header("Shooting")]
         public float fireRate;
-        public PlayerFireOption fireOption;
         private float _timeOfNextFire = 0;
 
         [Header("Bullet Options")]
@@ -64,6 +56,7 @@ namespace ReubenMiller.Fracture.Demo
             // Find the MainUIManger and set the base variables
             var manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<MainUIManager>();
             manager.rayCastActivation = rayCastActivation;
+            rayCastActivation.fractureCount = manager.fragmentCounts[manager.currentFragCount];
         }
 
         /// <summary>
@@ -95,10 +88,18 @@ namespace ReubenMiller.Fracture.Demo
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (Cursor.lockState == CursorLockMode.Locked)
+                {
                     Cursor.lockState = CursorLockMode.None;
+                    cinemachineVCam.enabled = false;
+                }
                 else
+                {
                     Cursor.lockState = CursorLockMode.Locked;
+                    cinemachineVCam.enabled = true;
+                }
             }
+            if (Cursor.lockState == CursorLockMode.None)
+                return;
 
             // get input
             var movementHor = Input.GetAxis("Horizontal");
@@ -119,24 +120,14 @@ namespace ReubenMiller.Fracture.Demo
             if (Time.time > _timeOfNextFire && Input.GetMouseButtonDown(0))
             {
                 _timeOfNextFire = Time.time + fireRate;
-                // shoot the bullet using one of 2 options available
-                // BULLETAREA -> fires a physical bullet that uses AreaActivation
-                // RAYCAST -> uses RayCastActivation
-                switch (fireOption)
-                {
-                    case PlayerFireOption.BULLETAREA:
-                        GameObject bulletTemp = Instantiate(bullet, firePoint.transform.position, firePoint.transform.rotation);
-                        bulletTemp.GetComponent<Rigidbody>().AddForce(bulletTemp.transform.forward * bulletFireForce);
-                        bulletTemp.GetComponent<AreaActivation>().SetEffect(spawnEffect, effect);
-                        bulletTemp.GetComponent<AreaActivation>().fractureCount = rayCastActivation.fractureCount;
-                        break;
-                    case PlayerFireOption.RAYCAST:
-                        rayCastActivation.FireRay(effect, spawnEffect);
-                        break;
-                    default:
-                        Debug.Log("Error: Player Fire Option Failed");
-                        break;
-                }
+
+                // shoot the bullet in the direction of the player
+                Ray ray = cam.GetComponent<Camera>().ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+                GameObject bulletTemp = Instantiate(bullet, ray.GetPoint(0), Quaternion.identity);
+                bulletTemp.GetComponent<Rigidbody>().velocity = ray.direction.normalized * bulletFireForce;
+
+                // Fire a ray to start fracuring the object
+                rayCastActivation.FireRay(effect, spawnEffect);
             }
         }
     }

@@ -1703,10 +1703,9 @@ MonoBehaviour:
   spawnEffect: 0
   effect: {fileID: 858662849300924067, guid: f8ba84e43daa93d4e8226af838a8416e, type: 3}
   fireRate: 0.25
-  fireOption: 1
   bullet: {fileID: 2844094435825769845, guid: 1b95164185cdb044cb6777585244ae14, type: 3}
   firePoint: {fileID: 854949247}
-  bulletFireForce: 1000
+  bulletFireForce: 25
   rayCastActivation: {fileID: 1036209877}
 --- !u!114 &1036209877
 MonoBehaviour:
