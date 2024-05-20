@@ -3,6 +3,12 @@ using UnityEngine;
 
 namespace ReubenMiller.Fracture
 {
+    /*
+     * The following code is a re-written version of:
+     * Greenheck, D. (2024). OpenFracture [Source Code]. Available from: https://github.com/dgreenheck/OpenFracture [Accessed May 2024].
+     *
+     * Unless otherwise specified
+    */
     /// <summary>
     /// Class for triangulating a set of 3D points with edge constraints. Supports convex and non-convex polygons
     /// as well as polygons with holes.

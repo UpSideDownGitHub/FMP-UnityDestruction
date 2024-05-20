@@ -1,0 +1,16 @@
+Lion Statue Orignal:
+noe-3d.at. (2020). Löwe [online]. Available from: https://sketchfab.com/3d-models/lowe-4522a4cdc1c14190bf1a8811fa27da32 [Accessed May 2024].
+Optimized Lion Statue:
+Flynn, T. (2021). Lion Statue - optimized. [online] Available from: https://sketchfab.com/3d-models/lion-statue-optimized-62662d27c94d4994b2479b8de3a66ca7 [Accessed May 2024].
+
+Prototype Materials:
+Ciathyza. (2021) Gridbox Prototype Materials [online] Available from: https://assetstore.unity.com/packages/2d/textures-materials/gridbox-prototype-materials-129127#publisher [Accessed May 2024].
+
+Buildings:
+ALIyerEdon. (2023) White City. [online] Available from: https://assetstore.unity.com/packages/3d/environments/urban/white-city-76766 [Accessed May 2024].
+
+Skybox:
+Avionx. (2022) Skybox Series Free. [online] Available from: https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633 [Accessed May 2024].
+
+OpenFracture:
+Greenheck, D. (2024). OpenFracture [Computer Program]. Available from: https://github.com/dgreenheck/OpenFracture [Accessed May 2024]. 

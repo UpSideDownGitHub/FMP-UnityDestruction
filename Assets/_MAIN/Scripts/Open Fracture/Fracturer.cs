@@ -14,8 +14,12 @@ namespace ReubenMiller.Fracture
 {
     public static class Fracturer
     {
-
-
+        /*
+         * The following code is a re-written version of:
+         * Greenheck, D. (2024). OpenFracture [Source Code]. Available from: https://github.com/dgreenheck/OpenFracture [Accessed May 2024].
+         *
+         * Unless otherwise specified
+        */
 
         /// <summary>
         /// Asynchronously generates the mesh fragments based on the provided options. The generated fragment objects are
@@ -270,6 +274,16 @@ namespace ReubenMiller.Fracture
             return obj;
         }
 
+        /*
+         * The Following function was not from OpenFracture and was
+         * added as optimisations for mesh collider creation
+        */
+        /// <summary>
+        /// Uses Batch jobs to quickly create all the colliders needed for the new meshes
+        /// </summary>
+        /// <param name="meshes"></param>
+        /// <param name="meshesPerJob"></param>
+        /// <returns></returns>
         public static Mesh[] CreateCollidersFast(Mesh[] meshes, int meshesPerJob = 1)
         {
             NativeArray<int> meshIds = new NativeArray<int>(meshes.Length, Allocator.TempJob);
@@ -287,7 +301,10 @@ namespace ReubenMiller.Fracture
 
             return meshes;
         }
-
+        /*
+         * The Following IJobParallelFor was not from OpenFracture and was
+         * added as optimisations for mesh collider creation
+        */
         public struct BakeJob : IJobParallelFor
         {
             private NativeArray<int> meshIds;

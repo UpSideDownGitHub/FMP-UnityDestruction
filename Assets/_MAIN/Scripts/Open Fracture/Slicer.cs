@@ -2,6 +2,13 @@
 
 namespace ReubenMiller.Fracture
 {
+    /*
+     * The following code is a re-written version of:
+     * Greenheck, D. (2024). OpenFracture [Source Code]. Available from: https://github.com/dgreenheck/OpenFracture [Accessed May 2024].
+     *
+     * Unless otherwise specified
+    */
+
     /// <summary>
     /// Class which handles slicing a mesh into two pieces given the origin and normal of the slice plane.
     /// </summary>

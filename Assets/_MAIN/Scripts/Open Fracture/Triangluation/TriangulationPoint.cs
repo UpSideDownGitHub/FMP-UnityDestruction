@@ -2,6 +2,12 @@
 
 namespace ReubenMiller.Fracture
 {
+    /*
+     * The following code is a re-written version of:
+     * Greenheck, D. (2024). OpenFracture [Source Code]. Available from: https://github.com/dgreenheck/OpenFracture [Accessed May 2024].
+     *
+     * Unless otherwise specified
+    */
     /// <summary>
     /// This data structure is used to represent a point during triangulation.
     /// </summary>
