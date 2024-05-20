@@ -67,6 +67,10 @@ namespace ReubenMiller.Fracture
 
         /// <summary>
         /// Fracture the current obect
+        /// 
+        /// NOTE:
+        /// There is still and issue with this where the object will some times lag and not fracture
+        /// this is caused by the preprocessing time not being available.
         /// </summary>
         public void FractureThis(float exploForce, Vector3 exploPosition, float exploRadius, int Count = 0)
         {
@@ -151,11 +155,14 @@ namespace ReubenMiller.Fracture
         /// </summary>
         public void PropogateStress()
         {
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+
             // enable the children
             int childCount = fragmentRoot.transform.childCount;
             for (int i = 0; i < childCount; i++)
             {
                 fragmentRoot.transform.GetChild(i).gameObject.SetActive(true);
+                fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, explosionPosition, explosionRadius);
             }
             try
             {
@@ -217,7 +224,6 @@ namespace ReubenMiller.Fracture
             for (int i = 0; i < childCount; i++)
             {
                 fragmentRoot.transform.GetChild(i).gameObject.AddComponent<FadeDestroy>();
-                fragmentRoot.transform.GetChild(i).gameObject.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, explosionPosition, explosionRadius);
             }
 
             // destroy the current gameobject.

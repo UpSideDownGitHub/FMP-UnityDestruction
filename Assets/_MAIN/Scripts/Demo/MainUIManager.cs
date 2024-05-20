@@ -75,5 +75,10 @@ namespace ReubenMiller.Fracture.Demo
             }
 
         }
+
+        public void Quit()
+        {
+            Application.Quit();
+        }
     }
 }
